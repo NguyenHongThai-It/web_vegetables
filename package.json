@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "bootstrap": "5.2.2",
+    "node-sass": "^7.0.3",
+    "sass": "^1.55.0"
+  },
+  "scripts": {
+    "sass": "node-sass sass/ -o build/css/",
+    "dev": "rerun-script"
+  }
+}
