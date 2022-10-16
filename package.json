@@ -5,7 +5,6 @@
     "sass": "^1.55.0"
   },
   "scripts": {
-    "sass": "node-sass sass/ -o build/css/",
-    "dev": "rerun-script"
+    "sass": "sass ./scss/custom.scss ./scss/custom.css -w"
   }
 }
