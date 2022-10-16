@@ -25,15 +25,407 @@
     <link rel="stylesheet" href="./scss/style.css" />
   </head>
   <body>
-    <section class="container header" id="header">
-      <div class="header-wrap flex align-items-center justify-content-around">
-        <div class="header-left w-50" style="height: 123px; width: 358px">
-          <img src="./img/logo.jpg" alt="" class="h-100 header-left__img" />
-        </div>
+    <div class="app">
+      <section class="container header" id="header">
+        <div
+          class="header-wrap d-flex align-items-start justify-content-between"
+        >
+          <div class="header-left">
+            <a href="#" class="header-left__link">
+              <img
+                src="./img/logo.jpg"
+                alt=""
+                class="h-100 w-100 header-left__img"
+              />
+            </a>
+          </div>
 
-        <div class="header-right"></div>
-      </div>
-    </section>
+          <div class="header-right d-flex flex-column mt-3">
+            <div class="header-right-top">
+              <ul class="header-right-list d-flex gap-sm-1 p-0">
+                <li class="header-right__item">
+                  <a href="#" class="header-right__link fw-normal">
+                    Trang chủ
+                  </a>
+                </li>
+                <li class="header-right__item">
+                  <a href="#" class="header-right__link fw-normal">
+                    Giới thiệu
+                  </a>
+                </li>
+                <li class="header-right__item">
+                  <a href="#" class="header-right__link fw-normal"> Liên hệ </a>
+                </li>
+                <li class="header-right__item">
+                  <a href="#" class="header-right__link fw-normal">
+                    Hướng dẫn mua hàng
+                  </a>
+                </li>
+                <li class="header-right__item">
+                  <a href="#" class="header-right__link fw-normal">
+                    Qui định & chính sách chung
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-right-center d-flex">
+              <input
+                type="text"
+                class="header-right__search w-100"
+                placeholder="Nhập tên sản phẩm cần tìm ..."
+              />
+              <button class="header-right__btn">Tìm kiếm</button>
+            </div>
+            <div class="header-right__bottom">
+              Gợi ý từ khóa: Cao hồng sâm, Sâm tầm mật ong, Trà linh chi,...
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="navigate" id="navigate">
+        <ul
+          class="navigate-list d-flex align-items-center justify-content-center"
+        >
+          <li class="navigate-list__item">
+            <i class="fa-solid fa-bars"></i>
+            Tất cả sản phẩm
+            <ol class="navigate-sublist">
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Hồng sâm hàn quốc
+                  <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <ul class="navigate-sublist navigate-sublist--right">
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      Cao hồng sâm hàn quốc
+                    </a>
+                  </li>
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      Sâm khô hàn quốc
+                    </a>
+                  </li>
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      Sâm mật ông hàn quốc
+                    </a>
+                  </li>
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      Hắc sâm hàn quốc
+                    </a>
+                  </li>
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      Nhân sâm tươi hàn quốc
+                    </a>
+                  </li>
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      Rượu sâm linh chi
+                    </a>
+                  </li>
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      Trà hồng sâm hàn quốc và bột sâm
+                    </a>
+                  </li>
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      Viên hồng sâm hàn quốc
+                    </a>
+                  </li>
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      Kẹo sâm hàn quốc
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Nấm chi khô hàn quốc
+                  <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <ul class="navigate-sublist navigate-sublist--right">
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      Cao linh chi hàn quốc
+                    </a>
+                  </li>
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      Linh chi khô hàn quốc
+                    </a>
+                  </li>
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      Sản phẩm khác từ linh chi
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Đông trùng hạ thảo hàn quốc
+                  <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <ul class="navigate-sublist navigate-sublist--right">
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      Nước đông trùng hạ thảo
+                    </a>
+                  </li>
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      Viên đông trùng hạ thảo
+                    </a>
+                  </li>
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      Cao đông trùng hạ thảo
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Thảo dược hàn quốc
+                  <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <ul class="navigate-sublist navigate-sublist--right">
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      An cung ngưu hoàng
+                    </a>
+                  </li>
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      Tinh dầu thông đỏ
+                    </a>
+                  </li>
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      Bổ gan giải rượu
+                    </a>
+                  </li>
+                  <li class="navigate-sublist__item">
+                    <a href="#" class="navigate-sublist__link">
+                      Sản phẩm khác
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </li>
+          <li class="navigate-list__item">
+            <a href="#" class="navigate-list__link">
+              Hồng sâm hàn quốc
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <ol class="navigate-sublist navigate-sublist--simple">
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Cao hồng sâm hàn quốc
+                </a>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Sâm khô hàn quốc
+                </a>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Sâm mật ông hàn quốc
+                </a>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Hắc sâm hàn quốc
+                </a>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Nhân sâm tươi hàn quốc
+                </a>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Rượu sâm linh chi
+                </a>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Trà hồng sâm hàn quốc và bột sâm
+                </a>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Viên hồng sâm hàn quốc
+                </a>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Kẹo sâm hàn quốc
+                </a>
+              </li>
+            </ol>
+          </li>
+          <li class="navigate-list__item">
+            <a href="#" class="navigate-list__link">
+              Đông trùng hạ thảo
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <ol class="navigate-sublist navigate-sublist--simple">
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Nước đông trùng hạ thảo
+                </a>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Viên đông trùng hạ thảo
+                </a>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Cao đông trùng hạ thảo
+                </a>
+              </li>
+            </ol>
+          </li>
+          <li class="navigate-list__item">
+            <a href="#" class="navigate-list__link">
+              Nấm linh chi hàn quốc
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <ol class="navigate-sublist navigate-sublist--simple">
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Cao linh chi hàn quốc
+                </a>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Linh chi khô hàn quốc
+                </a>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Sản phẩm khác từ linh chi
+                </a>
+              </li>
+            </ol>
+          </li>
+          <li class="navigate-list__item">
+            <a href="#" class="navigate-list__link">
+              Thảo dược hàn quốc
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <ol class="navigate-sublist navigate-sublist--simple">
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  An cung ngưu hoàng
+                </a>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Tinh dầu thông đỏ
+                </a>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Bổ gan giải rượu
+                </a>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link"> Sản phẩm khác </a>
+              </li>
+            </ol>
+          </li>
+          <li class="navigate-list__item">
+            <a href="#" class="navigate-list__link"> Hệ thống cửa hàng </a>
+          </li>
+          <li class="navigate-list__item">
+            <a href="#" class="navigate-list__link">
+              Tin tức
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <ol
+              class="navigate-sublist navigate-sublist--simple navigate-sublist--reverse"
+            >
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Bài Viết Từ Hệ Thống K-GIN
+                </a>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Kiến Thức Về Nhân Sâm
+                </a>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Kiến Thức Về Hồng Sâm
+                </a>
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Kiến Thức Về Linh Chi</a
+                >
+              </li>
+              <li class="navigate-sublist__item">
+                <a href="#" class="navigate-sublist__link">
+                  Kiến Thức Về ĐTHT</a
+                >
+              </li>
+            </ol>
+          </li>
+        </ul>
+
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner" style="height: 44.4rem">
+            <div class="carousel-item active">
+              <img src="./img/slide-1.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./img/slide-2.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./img/slide-3.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
   <!-- BOOTSTRAP -->
   <script
