@@ -27,17 +27,13 @@
     />
     <link rel="stylesheet" href="./asset/scss/custom.css" />
     <link rel="stylesheet" href="./asset/scss/css/home.css" />
-    <link
-      rel="stylesheet"
-      href="./asset/scss/responsive/_home-repsonsive.css"
-    />
   </head>
 
   <body>
     <div class="app">
       <section class="container header" id="header">
         <div
-          class="header-wrap d-flex align-items-start justify-content-between"
+          class="header-wrap d-flex align-items-md-start align-items-center justify-content-md-between justify-content-center flex-column flex-md-row"
         >
           <div class="header-left">
             <a href="#" class="header-left__link">
@@ -49,9 +45,9 @@
             </a>
           </div>
 
-          <div class="header-right d-flex flex-column mt-3">
+          <div class="header-right d-flex flex-column mt-md-3 mt-0">
             <div class="header-right-top">
-              <ul class="header-right-list d-flex gap-sm-1 p-0">
+              <ul class="header-right-list d-none d-md-flex gap-sm-1 p-0">
                 <li class="header-right__item">
                   <a href="#" class="header-right__link fw-normal">
                     Trang chủ
@@ -77,7 +73,7 @@
                 </li>
               </ul>
             </div>
-            <div class="header-right-center d-flex">
+            <div class="header-right-center d-flex mb-2 mb-md-0">
               <input
                 type="text"
                 class="header-right__search w-100"
@@ -85,16 +81,16 @@
               />
               <button class="header-right__btn">Tìm kiếm</button>
             </div>
-            <div class="header-right__bottom">
+            <div class="header-right__bottom d-none d-md-flex">
               Gợi ý từ khóa: Cao hồng sâm, Sâm tầm mật ong, Trà linh chi,...
             </div>
           </div>
         </div>
       </section>
 
-      <section class="navigate" id="navigate">
+      <section class="navigate mt-3 mt-md-0" id="navigate">
         <ul
-          class="navigate-list d-flex align-items-center justify-content-center"
+          class="navigate-list align-items-center justify-content-center d-none d-md-flex"
         >
           <li class="navigate-list__item">
             <i class="fa-solid fa-bars"></i>
@@ -393,6 +389,305 @@
             </ol>
           </li>
         </ul>
+
+        <div class="d-block d-md-none d-block p-0 position-relative">
+          <div class="navigate-list__item" id="navigate-list-collapse">
+            <i class="fa-solid fa-bars"></i>
+            Tất cả sản phẩm
+          </div>
+          <ul
+            class="navigate-list-mobile position-absolute"
+            id="navigate-list-collapse__item"
+          >
+            <li
+              class="navigate-list-mobile__item"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample1"
+              aria-expanded="false"
+              aria-controls="collapseExample1"
+            >
+              <img src="./asset/img/home/menu-1.png" alt="" class="w-auto" />
+              <a href="#" class="navigate-list-mobile__link"
+                >Hồng sâm hàn quốc</a
+              >
+              <i
+                class="navigate-list-mobile__plus fa-solid fa-plus w-auto position-absolute"
+              ></i>
+            </li>
+            <ul
+              class="navigate-sublist-mobile collapse p-1"
+              id="collapseExample1"
+            >
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Cao hồng sâm hàn quốc
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Nước Hồng Sâm Hàn Quốc
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Cao hồng sâm hàn quốc
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Sâm Khô Hàn Quốc
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Sâm Mật Ong Hàn Quốc
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Hắc Sâm Hàn Quốc
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Nhân Sâm Tươi Hàn Quốc
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Rượu Sâm Linh Chi
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Viên Hồng Sâm Hàn Quốc
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Trà Hồng Sâm Hàn Quốc Và Bột Sâm
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Kẹo Sâm Hàn Quốc
+                </a>
+              </li>
+            </ul>
+            <li
+              class="navigate-list-mobile__item"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample2"
+              aria-expanded="false"
+              aria-controls="collapseExample2"
+            >
+              <img src="./asset/img/home/menu-1.png" alt="" class="w-auto" />
+              <a href="#" class="navigate-list-mobile__link"
+                >Đồng trùng hạ thảo hàn quốc</a
+              >
+              <i
+                class="navigate-list-mobile__plus fa-solid fa-plus w-auto position-absolute"
+              ></i>
+            </li>
+            <ul
+              class="navigate-sublist-mobile collapse p-1"
+              id="collapseExample2"
+            >
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Nước Đông Trùng Hạ Thảo
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Viên Đông Trùng Hạ Thảo
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Cao Đông Trùng Hạ Thảo
+                </a>
+              </li>
+            </ul>
+
+            <li
+              class="navigate-list-mobile__item"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample3"
+              aria-expanded="false"
+              aria-controls="collapseExample3"
+            >
+              <img src="./asset/img/home/menu-1.png" alt="" class="w-auto" />
+              <a href="#" class="navigate-list-mobile__link"
+                >Nấm linh chi hàn quốc</a
+              >
+              <i
+                class="navigate-list-mobile__plus fa-solid fa-plus w-auto position-absolute"
+              ></i>
+            </li>
+            <ul
+              class="navigate-sublist-mobile collapse p-1"
+              id="collapseExample3"
+            >
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Cao Linh Chi Hàn Quốc
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Linh Chi Khô Hàn Quốc
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Sản Phẩm Khác Từ Linh Chi
+                </a>
+              </li>
+            </ul>
+            <li
+              class="navigate-list-mobile__item"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample4"
+              aria-expanded="false"
+              aria-controls="collapseExample4"
+            >
+              <img src="./asset/img/home/menu-1.png" alt="" class="w-auto" />
+              <a href="#" class="navigate-list-mobile__link"
+                >Thảo dược hàn quốc</a
+              >
+              <i
+                class="navigate-list-mobile__plus fa-solid fa-plus w-auto position-absolute"
+              ></i>
+            </li>
+            <ul
+              class="navigate-sublist-mobile collapse p-1"
+              id="collapseExample4"
+            >
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  An Cung Ngưu Hoàng
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Tinh Dầu Thông Đỏ
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Bổ Gan Giải Rượu
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Sản Phẩm Khác
+                </a>
+              </li>
+            </ul>
+            <li class="navigate-list-mobile__item">
+              <img src="./asset/img/home/menu-1.png" alt="" class="w-auto" />
+              <a href="#" class="navigate-list-mobile__link"
+                >Hệ thống cửa hàng</a
+              >
+            </li>
+            <li
+              class="navigate-list-mobile__item"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample5"
+              aria-expanded="false"
+              aria-controls="collapseExample5"
+            >
+              <img src="./asset/img/home/menu-1.png" alt="" class="w-auto" />
+              <a href="#" class="navigate-list-mobile__link">Tin tức</a>
+              <i
+                class="navigate-list-mobile__plus fa-solid fa-plus w-auto position-absolute"
+              ></i>
+            </li>
+            <ul
+              class="navigate-sublist-mobile collapse p-1"
+              id="collapseExample5"
+            >
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Bài Viết Từ Hệ Thống K-GIN
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Kiến Thức Về Nhân Sâm
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Kiến Thức Về Hồng Sâm
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Kiến Thức Về Linh Chi
+                </a>
+              </li>
+              <li
+                class="navigate-sublist-mobile__item d-flex align-items-center gap-3 position-relative"
+              >
+                <a href="" class="navigate-sublist-mobile__link">
+                  Kiến Thức Về ĐTHT
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </div>
 
         <div
           id="carouselExampleIndicators"
@@ -2877,4 +3172,5 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"
   ></script>
+  <script src="./asset/js/home.js"></script>
 </html>
