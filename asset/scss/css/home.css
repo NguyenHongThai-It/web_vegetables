@@ -1,4 +1,6 @@
 @import "../base/_home-variables.css";
+@import "../responsive/_home-responsive.css";
+
 html {
   font-size: 62.5%;
 }
@@ -11,7 +13,9 @@ a {
 img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
+
 /* Header */
 .header-left {
   cursor: pointer;
@@ -291,42 +295,45 @@ img {
   background-color: crimson;
 }
 
-@media (min-width: 1200px) {
-  .media-fontsize {
-    font-size: 2.7rem;
-  }
-  .media-margin {
-    margin-left: 1rem;
-    margin-right: 2rem;
-  }
+/* Mobile  bt*/
+#navigate-list-collapse {
+  cursor: pointer;
 }
 
-@media (max-width: 1199px) {
-  .media-fontsize {
-    font-size: 2.2rem;
-  }
-  .media-margin {
-    margin-right: 1.3rem;
-  }
+.navigate-list-mobile {
+  background: var(--leather_2);
+  list-style: none;
+  padding: 0;
+  width: 28rem;
+  height: calc(100vh - 3.1rem);
+  overflow: hidden;
+  z-index: 3;
+  transition: 0.3s ease-in-out;
+  left: 0px;
+  transition: 0.3s ease-in-out;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
 }
-
-@media (min-width: 993px) {
-  div.height-auto {
-    height: 100%;
-  }
+.navigate-list-mobile.move {
+  box-shadow: 0 100rem 0 100rem rgb(0 0 0 / 50%);
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
 }
-
-@media (max-width: 991px) {
-  .media-fontsize {
-    font-size: 3rem;
-  }
-  .media-margin {
-    margin-right: 3rem;
-  }
+.navigate-list-mobile .navigate-list-mobile__item {
+  box-shadow: 0px 1px 0px 0px rgb(0 0 0 / 22%);
+  border-bottom: 1px solid #eee7db;
+  position: relative;
+  padding: 0.6rem;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
-
-@media (max-width: 767px) {
-  div.hide-div {
-    display: none;
-  }
+.navigate-list-mobile .navigate-list-mobile__item .navigate-list-mobile__link {
+  font-size: 1.6rem;
+  font-family: "SegoeUI";
+  color: rgb(148, 14, 17);
+  font-weight: 700;
+  padding: 0.8rem 1rem;
 }
