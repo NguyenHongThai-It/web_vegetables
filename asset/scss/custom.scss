@@ -9,6 +9,7 @@ $theme-colors: (
   gray_6: #777777,
   gray_7: #666666,
   gray_8: #444444,
+  leather: #faf5ef,
   leather_1: #e7dccc,
   leather_2: #eee7db,
   leather_3: #eae2d6,
@@ -25,4 +26,5 @@ $theme-colors: (
   black_2: #202020,
   black_3: #000000,
 );
-@import "../node_modules/bootstrap/scss/bootstrap";
+$breadcrumb-divider: quote(">");
+@import "../../node_modules/bootstrap/scss//bootstrap.scss";

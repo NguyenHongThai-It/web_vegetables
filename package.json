@@ -4,6 +4,6 @@
     "sass": "^1.55.0"
   },
   "scripts": {
-    "sass": "sass ./scss/custom.scss ./scss/custom.css -w"
+    "sass": "sass ./asset/scss/custom.scss ./asset/scss/custom.css -w"
   }
 }
