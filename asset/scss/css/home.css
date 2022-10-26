@@ -371,9 +371,20 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.shadow {
+  box-shadow: -4px 0 0px -3px rgb(0 0 0 / 12%);
+  margin: 35px 0;
+}
+.p-0 .p-3 {
+  height: 500px;
+}
 
 .golden-text {
   color: #f0ad4e;
+}
+.footer-end {
+  text-align: center;
+  background-color: #bf1e2e;
 }
 
 #footer ::selection {
@@ -388,3 +399,13 @@ html {
 .transform-scale:hover img {
   transform: scale(1.09);
 }
+/* Shopping Guide
+.shopping-guide {
+  padding: 10px 25px;
+  font-weight: 300;
+  font-size: 15px;
+  width: 625px;
+  height: 3186px;
+  background-color: #fffcf5;
+  float: right;
+} */
