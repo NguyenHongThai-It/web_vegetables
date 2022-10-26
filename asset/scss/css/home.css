@@ -399,7 +399,7 @@ html {
 .transform-scale:hover img {
   transform: scale(1.09);
 }
-/* Shopping Guide
+/* Shopping Guide */
 .shopping-guide {
   padding: 10px 25px;
   font-weight: 300;
@@ -408,4 +408,4 @@ html {
   height: 3186px;
   background-color: #fffcf5;
   float: right;
-} */
+}
