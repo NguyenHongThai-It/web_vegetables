@@ -27,6 +27,10 @@
     />
     <link rel="stylesheet" href="./asset/scss/custom.css" />
     <link rel="stylesheet" href="./asset/scss/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="./asset/scss/responsive/_contact-responsive.css"
+    />
   </head>
 
   <body>
@@ -91,7 +95,7 @@
       <!-- Slider -->
       <section class="navigate mt-3 mt-md-0" id="navigate">
         <ul
-          class="navigate-list align-items-center justify-content-center d-none d-md-flex"
+          class="navigate-list align-items-center justify-content-center d-none d-lg-flex"
         >
           <li class="navigate-list__item">
             <i class="fa-solid fa-bars"></i>
@@ -391,7 +395,7 @@
           </li>
         </ul>
 
-        <div class="d-block d-md-none d-block p-0 position-relative">
+        <div class="d-block d-lg-none d-block p-0 position-relative">
           <div class="navigate-list__item" id="navigate-list-collapse">
             <i class="fa-solid fa-bars"></i>
             Tất cả sản phẩm
@@ -712,7 +716,7 @@
               </li>
             </ol>
           </nav>
-          <div class="wrap pt-3 d-flex row">
+          <div class="d-flex row">
             <div class="wrap-left col-md-3 col-12">
               <section id="news">
                 <!-- Hồng Sâm -->
@@ -1205,7 +1209,7 @@
               </section>
             </div>
 
-            <div class="wrap-right col-md-9 col-12 px-4 mt-4">
+            <div class="wrap-right col-md-9 col-12 mt-4">
               <div class="main-box py-3 px-5 bg-light_1">
                 <h1 class="main-__heading">Liên hệ</h1>
 
@@ -1253,32 +1257,30 @@
                 </div>
               </div>
 
-              <div id="best-seller">
-                <div class="row">
-                  <div class="col-6 m-auto">
-                    <div class="col-12 m-auto mt-5">
-                      <div
-                        class="border rounded-1 text-bg-gray_1 border-red_medium border-4 d-flex align-items-center"
-                      >
-                        <div
-                          class="special-banner p-2 d-flex align-items-center justify-content-center"
-                        >
-                          <span><b class="fs-2">Sản Phẩm Bán Chạy</b></span>
-                        </div>
-                      </div>
-                    </div>
+              <div id="best-seller" class="text-center">
+                <div
+                  class="item-label--goldenBackground item-label--clipPath p-1 mt-4 m-auto"
+                  style="width: 270px"
+                >
+                  <div
+                    class="item-label--redTextFeild item-label--clipPath label-Advertise"
+                    style="padding: 7px"
+                  >
+                    <span class="fs-2 label-Advertise fw-bold"
+                      >Sản Phẩm Bán Chạy</span
+                    >
                   </div>
                 </div>
 
                 <!-- Sản phẩm bán chạy -->
-                <div class="row">
-                  <div class="col col-sm-6 col-md-4 col-12">
+                <div class="row row-cols-number-auto">
+                  <div class="col-lg-4 col-md-6 col-12 auto-width">
                     <div class="card mt-4">
                       <div
                         class="item__img--hover d-flex align-items-center justify-content-center"
                       >
                         <img
-                          src="./asset/img/home/Vâng anh là nhất.jpg"
+                          src="./asset/img/home/300x268.png"
                           class="img-ani card-img-top"
                           alt="..."
                         />
@@ -1287,59 +1289,72 @@
                         <h5 class="item__tittle--hover card-title mb-4 fs-4">
                           <b>NẤM LINH CHI NÚI ĐÁ VÀNG HÀN QUỐC</b>
                         </h5>
-                        <div class="card-text d-flex mt-3">
+                        <div class="card-text pt-2">
                           <div
-                            class="media-fontsize media-margin text-danger fw-bold pe-3 ps-3 pt-3 mt-3"
+                            class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
                           >
-                            -8%
-                          </div>
-                          <div class="d-flex flex-column">
-                            <p
-                              class="fs-4 text-secondary m-0 ms-1"
-                              style="text-align: left"
-                            >
-                              <del>2.500.000 đ</del>
-                            </p>
-                            <p class="media-fontsize text-danger fw-bold m-0">
-                              2.300.000 đ
-                            </p>
+                            <p class="me-3" style="font-size: 3.8rem">-14%</p>
+                            <div class="text-start">
+                              <span
+                                class="fs-4 text-decoration-line-through fw-light text-secondary ms-1"
+                              >
+                                2.500.000 đ</span
+                              >
+                              <p class="media-fontsize-lg lh-1">2.300.000 đ</p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="card-body">
-                        <div class="item__btn me-3">
-                          <a
-                            href="#"
-                            class="btn btn-light_1 p-2 btn-lg"
-                            role="button"
-                            data-bs-toggle="button"
-                            ><i class="fa-solid fa-paper-plane me-3"></i>Xem
-                            nhanh</a
-                          >
-                        </div>
-                        <div class="item__btn">
-                          <a
-                            href="#"
-                            class="btn btn-light_1 p-2 btn-lg"
-                            role="button"
-                            data-bs-toggle="button"
-                            ><b
-                              >Xem chi tiết<i
-                                class="fa-solid fa-angles-right ms-2"
-                              ></i></b
-                          ></a>
+                      <div class="card-body p-4 pt-3">
+                        <div class="row">
+                          <div class="col-6 col-md-6 col-lg-6">
+                            <div class="item-btn--goldenBackground">
+                              <div
+                                class="item-btn--textFeild"
+                                style="padding: 0.2rem 1rem"
+                              >
+                                <a
+                                  href="#"
+                                  class="media-fontsize-sm btn btn-light_1"
+                                  role="button"
+                                  data-bs-toggle="button"
+                                  ><i class="fa-solid fa-paper-plane me-3"> </i
+                                  >Xem nhanh</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-6 col-md-6 col-lg-6">
+                            <div class="item-btn--goldenBackground">
+                              <div
+                                class="item-btn--textFeild"
+                                style="padding: 0.2rem 1rem"
+                              >
+                                <a
+                                  href="#"
+                                  class="media-fontsize-sm btn btn-light_1"
+                                  role="button"
+                                  data-bs-toggle="button"
+                                >
+                                  <b
+                                    >Xem chi tiết<i
+                                      class="fa-solid fa-angles-right ms-2"
+                                    ></i></b
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-
-                  <div class="col col-sm-6 col-md-4 col-12">
+                  <div class="col-lg-4 col-md-6 col-12 auto-width">
                     <div class="card mt-4">
                       <div
                         class="item__img--hover d-flex align-items-center justify-content-center"
                       >
                         <img
-                          src="./asset/img/home/Vâng anh là nhất.jpg"
+                          src="./asset/img/home/300x268.png"
                           class="img-ani card-img-top"
                           alt="..."
                         />
@@ -1348,59 +1363,72 @@
                         <h5 class="item__tittle--hover card-title mb-4 fs-4">
                           <b>NẤM LINH CHI NÚI ĐÁ VÀNG HÀN QUỐC</b>
                         </h5>
-                        <div class="card-text d-flex mt-3">
+                        <div class="card-text pt-2">
                           <div
-                            class="media-fontsize media-margin text-danger fw-bold pe-3 ps-3 pt-3 mt-3"
+                            class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
                           >
-                            -8%
-                          </div>
-                          <div class="d-flex flex-column">
-                            <p
-                              class="fs-4 text-secondary m-0 ms-1"
-                              style="text-align: left"
-                            >
-                              <del>2.500.000 đ</del>
-                            </p>
-                            <p class="media-fontsize text-danger fw-bold m-0">
-                              2.300.000 đ
-                            </p>
+                            <p class="me-3" style="font-size: 3.8rem">-14%</p>
+                            <div class="text-start">
+                              <span
+                                class="fs-4 text-decoration-line-through fw-light text-secondary ms-1"
+                              >
+                                2.500.000 đ</span
+                              >
+                              <p class="media-fontsize-lg lh-1">2.300.000 đ</p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="card-body">
-                        <div class="item__btn me-3">
-                          <a
-                            href="#"
-                            class="btn btn-light_1 p-2 btn-lg"
-                            role="button"
-                            data-bs-toggle="button"
-                            ><i class="fa-solid fa-paper-plane me-3"></i>Xem
-                            nhanh</a
-                          >
-                        </div>
-                        <div class="item__btn">
-                          <a
-                            href="#"
-                            class="btn btn-light_1 p-2 btn-lg"
-                            role="button"
-                            data-bs-toggle="button"
-                            ><b
-                              >Xem chi tiết<i
-                                class="fa-solid fa-angles-right ms-2"
-                              ></i></b
-                          ></a>
+                      <div class="card-body p-4 pt-3">
+                        <div class="row">
+                          <div class="col-6 col-md-6 col-lg-6">
+                            <div class="item-btn--goldenBackground">
+                              <div
+                                class="item-btn--textFeild"
+                                style="padding: 0.2rem 1rem"
+                              >
+                                <a
+                                  href="#"
+                                  class="media-fontsize-sm btn btn-light_1"
+                                  role="button"
+                                  data-bs-toggle="button"
+                                  ><i class="fa-solid fa-paper-plane me-3"> </i
+                                  >Xem nhanh</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-6 col-md-6 col-lg-6">
+                            <div class="item-btn--goldenBackground">
+                              <div
+                                class="item-btn--textFeild"
+                                style="padding: 0.2rem 1rem"
+                              >
+                                <a
+                                  href="#"
+                                  class="media-fontsize-sm btn btn-light_1"
+                                  role="button"
+                                  data-bs-toggle="button"
+                                >
+                                  <b
+                                    >Xem chi tiết<i
+                                      class="fa-solid fa-angles-right ms-2"
+                                    ></i></b
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-
-                  <div class="col col-sm-6 col-md-4 col-12">
+                  <div class="col-lg-4 col-md-6 col-12 auto-width">
                     <div class="card mt-4">
                       <div
                         class="item__img--hover d-flex align-items-center justify-content-center"
                       >
                         <img
-                          src="./asset/img/home/Vâng anh là nhất.jpg"
+                          src="./asset/img/home/300x268.png"
                           class="img-ani card-img-top"
                           alt="..."
                         />
@@ -1409,138 +1437,92 @@
                         <h5 class="item__tittle--hover card-title mb-4 fs-4">
                           <b>NẤM LINH CHI NÚI ĐÁ VÀNG HÀN QUỐC</b>
                         </h5>
-                        <div class="card-text d-flex mt-3">
+                        <div class="card-text pt-2">
                           <div
-                            class="media-fontsize media-margin text-danger fw-bold pe-3 ps-3 pt-3 mt-3"
+                            class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
                           >
-                            -8%
-                          </div>
-                          <div class="d-flex flex-column">
-                            <p
-                              class="fs-4 text-secondary m-0 ms-1"
-                              style="text-align: left"
-                            >
-                              <del>2.500.000 đ</del>
-                            </p>
-                            <p class="media-fontsize text-danger fw-bold m-0">
-                              2.300.000 đ
-                            </p>
+                            <p class="me-3" style="font-size: 3.8rem">-14%</p>
+                            <div class="text-start">
+                              <span
+                                class="fs-4 text-decoration-line-through fw-light text-secondary ms-1"
+                              >
+                                2.500.000 đ</span
+                              >
+                              <p class="media-fontsize-lg lh-1">2.300.000 đ</p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="card-body">
-                        <div class="item__btn me-3">
-                          <a
-                            href="#"
-                            class="btn btn-light_1 p-2 btn-lg"
-                            role="button"
-                            data-bs-toggle="button"
-                            ><i class="fa-solid fa-paper-plane me-3"></i>Xem
-                            nhanh</a
-                          >
-                        </div>
-                        <div class="item__btn">
-                          <a
-                            href="#"
-                            class="btn btn-light_1 p-2 btn-lg"
-                            role="button"
-                            data-bs-toggle="button"
-                            ><b
-                              >Xem chi tiết<i
-                                class="fa-solid fa-angles-right ms-2"
-                              ></i></b
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col col-sm-6 col-md-4 col-12">
-                    <div class="card mt-4">
-                      <div
-                        class="item__img--hover d-flex align-items-center justify-content-center"
-                      >
-                        <img
-                          src="./asset/img/home/Vâng anh là nhất.jpg"
-                          class="img-ani card-img-top"
-                          alt="..."
-                        />
-                      </div>
-                      <div class="card-body">
-                        <h5 class="item__tittle--hover card-title mb-4 fs-4">
-                          <b>NẤM LINH CHI NÚI ĐÁ VÀNG HÀN QUỐC</b>
-                        </h5>
-                        <div class="card-text d-flex mt-3">
-                          <div
-                            class="media-fontsize media-margin text-danger fw-bold pe-3 ps-3 pt-3 mt-3"
-                          >
-                            -8%
+                      <div class="card-body p-4 pt-3">
+                        <div class="row">
+                          <div class="col-6 col-md-6 col-lg-6">
+                            <div class="item-btn--goldenBackground">
+                              <div
+                                class="item-btn--textFeild"
+                                style="padding: 0.2rem 1rem"
+                              >
+                                <a
+                                  href="#"
+                                  class="media-fontsize-sm btn btn-light_1"
+                                  role="button"
+                                  data-bs-toggle="button"
+                                  ><i class="fa-solid fa-paper-plane me-3"> </i
+                                  >Xem nhanh</a
+                                >
+                              </div>
+                            </div>
                           </div>
-                          <div class="d-flex flex-column">
-                            <p
-                              class="fs-4 text-secondary m-0 ms-1"
-                              style="text-align: left"
-                            >
-                              <del>2.500.000 đ</del>
-                            </p>
-                            <p class="media-fontsize text-danger fw-bold m-0">
-                              2.300.000 đ
-                            </p>
+                          <div class="col-6 col-md-6 col-lg-6">
+                            <div class="item-btn--goldenBackground">
+                              <div
+                                class="item-btn--textFeild"
+                                style="padding: 0.2rem 1rem"
+                              >
+                                <a
+                                  href="#"
+                                  class="media-fontsize-sm btn btn-light_1"
+                                  role="button"
+                                  data-bs-toggle="button"
+                                >
+                                  <b
+                                    >Xem chi tiết<i
+                                      class="fa-solid fa-angles-right ms-2"
+                                    ></i></b
+                                ></a>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="card-body">
-                        <div class="item__btn me-3">
-                          <a
-                            href="#"
-                            class="btn btn-light_1 p-2 btn-lg"
-                            role="button"
-                            data-bs-toggle="button"
-                            ><i class="fa-solid fa-paper-plane me-3"></i>Xem
-                            nhanh</a
-                          >
-                        </div>
-                        <div class="item__btn">
-                          <a
-                            href="#"
-                            class="btn btn-light_1 p-2 btn-lg"
-                            role="button"
-                            data-bs-toggle="button"
-                            ><b
-                              >Xem chi tiết<i
-                                class="fa-solid fa-angles-right ms-2"
-                              ></i></b
-                          ></a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="other-news">
-                <div class="row">
-                  <div class="col-6 m-auto">
-                    <div class="col-12 m-auto mt-5">
-                      <div
-                        class="border rounded-1 text-bg-gray_1 border-red_medium border-4 d-flex align-items-center"
-                      >
-                        <div
-                          class="special-banner p-2 d-flex align-items-center justify-content-center"
-                        >
-                          <span><b class="fs-2">Tin tức khác</b></span>
-                        </div>
-                      </div>
-                    </div>
+
+              <div id="other-news" class="text-center">
+                <div
+                  class="item-label--goldenBackground item-label--clipPath p-1 mt-4 m-auto"
+                  style="width: 270px"
+                >
+                  <div
+                    class="item-label--redTextFeild item-label--clipPath label-Advertise"
+                    style="padding: 7px"
+                  >
+                    <span class="fs-2 label-Advertise fw-bold"
+                      >Sản Phẩm Bán Chạy</span
+                    >
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col col-sm-6 col-md-4 col-12">
+
+                <!-- Sản phẩm bán chạy -->
+                <div class="row row-cols-number-auto">
+                  <div class="col-lg-4 col-md-6 col-12 auto-width">
                     <div class="card mt-4">
                       <div
                         class="item__img--hover d-flex align-items-center justify-content-center"
                       >
                         <img
-                          src="./asset/img/home/Vâng anh là nhất.jpg"
+                          src="./asset/img/home/300x268.png"
                           class="img-ani card-img-top"
                           alt="..."
                         />
@@ -1557,18 +1539,126 @@
                           </p>
                         </div>
                       </div>
+                      <div class="card-body p-4 pt-3">
+                        <div class="row">
+                          <div class="col-6 col-md-6 col-lg-6">
+                            <div class="item-btn--goldenBackground">
+                              <div
+                                class="item-btn--textFeild"
+                                style="padding: 0.2rem 1rem"
+                              >
+                                <a
+                                  href="#"
+                                  class="media-fontsize-sm btn btn-light_1"
+                                  role="button"
+                                  data-bs-toggle="button"
+                                >
+                                  <b
+                                    >Xem chi tiết<i
+                                      class="fa-solid fa-angles-right ms-2"
+                                    ></i></b
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12 auto-width">
+                    <div class="card mt-4">
+                      <div
+                        class="item__img--hover d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="./asset/img/home/300x268.png"
+                          class="img-ani card-img-top"
+                          alt="..."
+                        />
+                      </div>
                       <div class="card-body">
-                        <div class="item__btn w-100 text-center">
-                          <a
-                            href="#"
-                            class="btn btn-light_1 p-2 btn-lg"
-                            role="button"
-                            data-bs-toggle="button"
-                            ><b
-                              >Xem chi tiết<i
-                                class="fa-solid fa-angles-right ms-2"
-                              ></i></b
-                          ></a>
+                        <h5 class="item__tittle--hover card-title mb-4 fs-4">
+                          <b>NẤM LINH CHI NÚI ĐÁ VÀNG HÀN QUỐC</b>
+                        </h5>
+                        <div class="card-text d-flex mt-3">
+                          <p>
+                            Bạn đã biết cách ngâm rượu sâm Hàn Quốc đúng cách
+                            chưa? Nhân sâm là một loại thảo dược đem tới nhiều
+                            công dụng tốt cho sức khỏe ...
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card-body p-4 pt-3">
+                        <div class="row">
+                          <div class="col-6 col-md-6 col-lg-6">
+                            <div class="item-btn--goldenBackground">
+                              <div
+                                class="item-btn--textFeild"
+                                style="padding: 0.2rem 1rem"
+                              >
+                                <a
+                                  href="#"
+                                  class="media-fontsize-sm btn btn-light_1"
+                                  role="button"
+                                  data-bs-toggle="button"
+                                >
+                                  <b
+                                    >Xem chi tiết<i
+                                      class="fa-solid fa-angles-right ms-2"
+                                    ></i></b
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12 auto-width">
+                    <div class="card mt-4">
+                      <div
+                        class="item__img--hover d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="./asset/img/home/300x268.png"
+                          class="img-ani card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="item__tittle--hover card-title mb-4 fs-4">
+                          <b>NẤM LINH CHI NÚI ĐÁ VÀNG HÀN QUỐC</b>
+                        </h5>
+                        <div class="card-text d-flex mt-3">
+                          <p>
+                            Bạn đã biết cách ngâm rượu sâm Hàn Quốc đúng cách
+                            chưa? Nhân sâm là một loại thảo dược đem tới nhiều
+                            công dụng tốt cho sức khỏe ...
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card-body p-4 pt-3">
+                        <div class="row">
+                          <div class="col-6 col-md-6 col-lg-6">
+                            <div class="item-btn--goldenBackground">
+                              <div
+                                class="item-btn--textFeild"
+                                style="padding: 0.2rem 1rem"
+                              >
+                                <a
+                                  href="#"
+                                  class="media-fontsize-sm btn btn-light_1"
+                                  role="button"
+                                  data-bs-toggle="button"
+                                >
+                                  <b
+                                    >Xem chi tiết<i
+                                      class="fa-solid fa-angles-right ms-2"
+                                    ></i></b
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1587,4 +1677,5 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"
   ></script>
+  <script src="./asset/js/common.js"></script>
 </html>

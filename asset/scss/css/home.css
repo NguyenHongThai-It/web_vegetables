@@ -1,5 +1,4 @@
 @import "../base/_home-variables.css";
-@import "../responsive/_home-responsive.css";
 
 html {
   font-size: 62.5%;
@@ -24,6 +23,7 @@ img {
   width: 358px;
   height: 123px;
   overflow: hidden;
+  object-fit: contain;
   flex-shrink: 0;
 }
 .header-left__img {
@@ -282,6 +282,100 @@ img {
   color: crimson;
 }
 
+.item-label--goldenBackground {
+  background: linear-gradient(
+    0deg,
+    rgba(192, 142, 40, 1) 0%,
+    rgba(247, 236, 158, 1) 33%,
+    rgba(192, 142, 40, 1) 67%,
+    rgba(247, 236, 158, 1) 100%
+  );
+}
+
+.item-label--redTextFeild {
+  color: #f0ad4e;
+  background-color: #bf1e2e;
+}
+
+.item-label--redTextFeild {
+  color: #f0ad4e;
+  background-color: #bf1e2e;
+}
+
+.item-label--goldTextFeild {
+  color: white;
+  background-color: #f0ad4e;
+}
+
+.item-label--clipPath {
+  clip-path: polygon(
+    10px 0%,
+    calc(100% - 10px) 0%,
+    100% 10px,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    10px 100%,
+    0% calc(100% - 10px),
+    0% 10px
+  );
+}
+
+.item-label--clipPathE {
+  clip-path: polygon(
+    0 0%,
+    calc(100% - 10px) 0%,
+    100% 10px,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0 100%,
+    0% calc(100% - 10px),
+    0% 10px
+  );
+}
+
+.item-btn--goldenBackground {
+  padding: 0.15rem;
+  padding-bottom: 0.35rem;
+  background: linear-gradient(
+    0deg,
+    rgba(192, 142, 40, 1) 0%,
+    rgba(247, 236, 158, 1) 33%,
+    rgba(192, 142, 40, 1) 67%,
+    rgba(247, 236, 158, 1) 100%
+  );
+  clip-path: polygon(
+    5px 0%,
+    calc(100% - 5px) 0%,
+    100% 5px,
+    100% calc(100% - 5px),
+    calc(100% - 5px) 100%,
+    5px 100%,
+    0% calc(100% - 5px),
+    0% 5px
+  );
+}
+
+.item-btn--textFeild {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-gray_7-rgb), var(--bs-text-opacity)) !important;
+  background-color: var(--white_1);
+  clip-path: polygon(
+    5px 0%,
+    calc(100% - 5px) 0%,
+    100% 5px,
+    100% calc(100% - 5px),
+    calc(100% - 5px) 100%,
+    5px 100%,
+    0% calc(100% - 5px),
+    0% 5px
+  );
+}
+
+.item-btn--textFeild:hover * {
+  transition: none;
+  color: crimson;
+}
+
 .category-item {
   color: var(--text-color);
   background-color: transparent;
@@ -291,8 +385,46 @@ img {
 }
 
 .category-item:hover {
-  color: var(--white-color);
-  background-color: crimson;
+  cursor: pointer;
+  color: #f0ad4e;
+  background-color: #bf1e2e;
+}
+
+.transform-scale-bigImg img {
+  transition: 0.3s;
+}
+
+.transform-scale-bigImg:hover img {
+  transform: scale(1.09);
+}
+
+#introduce table,
+#introduce tr,
+#introduce td {
+  border: 0.1rem solid var(--black_1);
+  vertical-align: middle;
+}
+
+#introduce ::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+#introduce ::-webkit-scrollbar-thumb {
+  background-color: #bf1e2e;
+}
+
+#introduce ::-webkit-scrollbar-track {
+  background: linear-gradient(
+    0deg,
+    rgba(192, 142, 40, 1) 0%,
+    rgba(247, 236, 158, 1) 33%,
+    rgba(192, 142, 40, 1) 67%,
+    rgba(247, 236, 158, 1) 100%
+  );
+}
+
+#introduce ::-webkit-scrollbar-thumb:hover {
+  background-color: #3c0006;
 }
 
 /* Mobile  bt*/
