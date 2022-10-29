@@ -66,6 +66,9 @@
     font-size: 1.2rem;
   }
   /* service */
+  .payment-method-margin {
+    margin-top: 1.6rem;
+  }
 
   .mobile-img--height {
     height: 20rem;

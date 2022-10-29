@@ -57,52 +57,33 @@
     width: 80%;
     margin-top: 20px !important;
   }
-  /* font */
-  .media-fontsize-lg {
-    font-size: 2.5rem;
-  }
-
-  .media-fontsize-sm {
-    font-size: 1.2rem;
-  }
-  /* service */
-
-  .mobile-img--height {
-    height: 20rem;
-  }
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 
 @media (min-width: 768px) {
-  .media-fontsize-lg {
-    font-size: 2.8rem;
+  .navigation-menu__item {
+    width: 100%;
+    box-shadow: none;
+    border-bottom: 0.5rem solid transparent;
   }
-  .media-fontsize-sm {
-    font-size: 1.5rem;
+
+  .navigation-menu__span {
+    min-height: 7.5rem;
   }
-  .payment-method-justify {
-    justify-content: center;
+
+  .auto-border {
+    border-left: 1px solid #333;
+    border-top: none;
   }
 }
 
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (min-width: 992px) {
-  .media-fontsize-lg {
-    font-size: 2rem;
-  }
-  .media-fontsize-sm {
-    font-size: 1rem;
-  }
-  div.height-auto {
-    height: 100%;
-  }
 }
 
 @media (min-width: 1200px) {
 }
+
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (min-width: 1400px) {
-  .media-fontsize-sm {
-    font-size: 1.3rem;
-  }
 }

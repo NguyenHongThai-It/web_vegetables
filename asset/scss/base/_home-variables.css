@@ -1,4 +1,6 @@
 :root {
+  --hover_background: #bf1e2e;
+  --hover_color: #f0ad4e;
   --white_1: #fff;
   --light_1: #fffcf5;
   --gray_1: #f2f2f2;
@@ -24,4 +26,5 @@
   --black_1: #191919;
   --black_2: #202020;
   --black_3: #000000;
+
 }
