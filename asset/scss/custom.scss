@@ -28,5 +28,5 @@ $theme-colors: (
   hover_background: #bf1e2e,
   hover_color: #f0ad4e,
 );
-$breadcrumb-divider: quote(">");
+$breadcrumb-divider: quote(" » ");
 @import "../../node_modules/bootstrap/scss//bootstrap.scss";
