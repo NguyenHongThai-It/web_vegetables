@@ -28,7 +28,7 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 30px;
   color: #212529;
   text-align: left;
   background-color: #fff;
@@ -353,7 +353,7 @@ html {
 }
 .navigate-list-mobile .navigate-list-mobile__item {
   box-shadow: 0px 1px 0px 0px rgb(0 0 0 / 22%);
-  border-bottom: 1px solid #eee7db;
+  border-bottom: 1px solid #dddad5;
   position: relative;
   padding: 0.6rem;
   font-size: 1.5rem;
@@ -374,17 +374,33 @@ html {
 .shadow {
   box-shadow: -4px 0 0px -3px rgb(0 0 0 / 12%);
   margin: 35px 0;
+  color: #fff;
 }
-.p-0 .p-3 {
-  height: 500px;
+.footer-logo > img {
+  width: 260px;
+  height: 54px;
+}
+.border-secondary {
+  box-shadow: -4px 0 0px -3px rgb(0 0 0 / 12%);
+}
+h5.pb-3.ps-3 {
+  width: 100% !important;
+  box-shadow: 0 1px 0 0 rgb(0 0 0 / 12%);
+  border-bottom: 1px solid #bd303d;
+  margin-bottom: 0px;
+  font-size: 16px;
 }
 
+.container {
+  overflow: hidden;
+}
 .golden-text {
   color: #f0ad4e;
 }
 .footer-end {
   text-align: center;
   background-color: #bf1e2e;
+  color: #fff;
 }
 
 #footer ::selection {
@@ -399,13 +415,198 @@ html {
 .transform-scale:hover img {
   transform: scale(1.09);
 }
-/* Shopping Guide */
-.shopping-guide {
-  padding: 10px 25px;
-  font-weight: 300;
+/* Modal */
+.call-now-button {
+  top: 90%;
+  left: 3%;
+  z-index: 9999;
+  clear: both;
+  margin: 0 auto;
+  position: fixed;
+  border-radius: 50px;
+  display: block;
+}
+.call-now-button div {
+  display: flex;
+}
+.call-now-button .call-text {
+  color: #fff;
+}
+.call-now-button div p {
+  color: #fff;
+  display: table;
+  padding: 16px 14px 13px 65px;
+  border-radius: 21px;
+  height: 34px;
+  line-height: 14px;
+  font-size: 21px;
+  margin: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Roboto", Helvetica, sans-serif;
+  background: var(--red_bold);
+}
+#quickcallbutton {
+  text-decoration: none;
+}
+.quick-alo-ph-circle.active {
+  width: 130px;
+  height: 130px;
+  top: -40px;
+  left: -40px;
+  position: absolute;
+  background-color: transparent;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid var(--secondary-color);
+  opacity: 1;
+  -webkit-animation: quick-alo-circle-anim 1.2s infinite ease-in-out;
+  -moz-animation: quick-alo-circle-anim 1.2s infinite ease-in-out;
+  -ms-animation: quick-alo-circle-anim 1.2s infinite ease-in-out;
+  -o-animation: quick-alo-circle-anim 1.2s infinite ease-in-out;
+  animation: quick-alo-circle-anim 1.2s infinite ease-in-out;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.quick-alo-ph-img-circle.shake {
+  width: 60px;
+  height: 60px;
+  top: -6px;
+  left: -6px;
+  position: absolute;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  opacity: 1;
+  background: url(../../img/home/quick-call-button.png) no-repeat center center;
+  -webkit-animation: quick-alo-circle-img-anim 1s infinite ease-in-out;
+  -moz-animation: quick-alo-circle-img-anim 1s infinite ease-in-out;
+  -ms-animation: quick-alo-circle-img-anim 1s infinite ease-in-out;
+  -o-animation: quick-alo-circle-img-anim 1s infinite ease-in-out;
+  animation: quick-alo-circle-img-anim 1s infinite ease-in-out;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.bg-golden {
+  background: linear-gradient(
+    0deg,
+    rgba(192, 142, 40, 1) 0%,
+    rgba(247, 236, 158, 1) 33%,
+    rgba(192, 142, 40, 1) 67%,
+    rgba(247, 236, 158, 1) 100%
+  );
+}
+.scrollToTop.btn-show {
+  padding: 3px 0;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  visibility: visible;
+  opacity: 1;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+a.scrollToTop {
+  z-index: 147483647;
+  border: 1px solid #777;
+  border-radius: 65px;
+  position: fixed;
+  right: 32px;
+  bottom: 156px;
+  visibility: hidden;
+  opacity: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  transition: 0.2s all ease;
+  -webkit-transition: 0.2s all ease;
+}
+.zalo-wrap {
+  position: fixed;
+  height: 64px;
+  width: 64px;
+  bottom: 85px;
+  right: 18px;
+  border-radius: 100%;
+  z-index: 2147483648 !important;
+}
+.zalo-sticky {
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  bottom: 87px;
+  right: 20px;
+  background: #b50002;
+  border-radius: 100%;
+  box-shadow: 0 3px 3px rgb(0 0 0 / 20%);
+  padding: 13px;
+}
+.zalo-wrap img {
+  vertical-align: middle;
+  border-style: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+#vnpicon {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.pdlr10 {
+  padding: 0px 10px;
+}
+.tr {
+  text-align: right;
+}
+.btn_icon {
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.btn_text {
+  color: #fafafa !important;
+  white-space: nowrap;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 15px;
-  width: 625px;
-  height: 3186px;
-  background-color: #fffcf5;
-  float: right;
+  height: 40px;
+  line-height: 40px;
+}
+.rectangle {
+  background-color: #b50002;
+  border-radius: 8px;
+  line-height: 40px;
+  position: relative;
+  padding: 0 10px 0 40px;
+  height: 40px;
+  cursor: pointer;
+  display: inline-block;
 }
