@@ -26,13 +26,15 @@ https://kgin.com.vn/
 - Policy (Long)
 - Modal(HongThai)
 - Instruction pay(TranThai)
-- Detail (ALL)
 - Search (TranThai)
 - Product(Long)
+- Detail (HongThai)
 
 - Cart (easy)
-  https://kgin.com.vn/thank-you/?order_id=10992
+  https://kgin.com.vn/cart/
 - Checkout (easy)
+  https://kgin.com.vn/checkout/
 - Payment successful
+  https://kgin.com.vn/thank-you/?order_id=10992
 - News-album
   https://kgin.com.vn/tin-tuc/album/cua-hang-2/
