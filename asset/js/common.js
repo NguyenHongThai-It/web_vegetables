@@ -10,10 +10,10 @@
     };
   }
 
-  window.onresize = () => {
-    const b = document.querySelector(".carousel-item.active ");
-    if (b !== null) {
-      a.style.height = b.offsetHeight + "px";
-    }
-  };
+  // window.onresize = () => {
+  //   const b = document.querySelector(".carousel-item.active ");
+  //   if (b !== null) {
+  //     a.style.height = b.offsetHeight + "px";
+  //   }
+  // };
 })();
