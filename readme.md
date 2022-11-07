@@ -30,11 +30,12 @@ https://kgin.com.vn/
 - Product(Long)
 - Detail (HongThai)
 
-- Cart (easy)
+- Cart (TranThai)
   https://kgin.com.vn/cart/
-- Checkout (easy)
+- Checkout (Long)
   https://kgin.com.vn/checkout/
-- Payment successful
+- Payment successful(TranThai)
   https://kgin.com.vn/thank-you/?order_id=10992
-- News-album
+- News-album(Long)
   https://kgin.com.vn/tin-tuc/album/cua-hang-2/
+- login + profile (HongThai)
