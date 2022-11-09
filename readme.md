@@ -39,3 +39,9 @@ https://kgin.com.vn/
 - News-album(Long)
   https://kgin.com.vn/tin-tuc/album/cua-hang-2/
 - login + profile (HongThai)
+
+- Fix Header
+  - Log in
+  - Sign in
+- Profile
+-
