@@ -21,12 +21,6 @@
       rel="stylesheet"
     />
 
-    <!-- BOOTSTRAP -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-    />
-
     <!-- SLICK CAROUSEL -->
     <link
       rel="stylesheet"
@@ -43,7 +37,12 @@
 
     <!-- CUSTOM -->
     <link rel="stylesheet" href="./asset/scss/custom.css" />
+    <link rel="stylesheet" href="./asset/scss/base/common.css" />
+    <link rel="stylesheet" href="./asset/scss/base/_header.css" />
+    <link rel="stylesheet" href="./asset/scss/base/_footer.css" />
+
     <link rel="stylesheet" href="./asset/scss/css/home.css" />
+    <link rel="stylesheet" href="./asset/scss/responsive/_vnp-responsive.css" />
     <link
       rel="stylesheet"
       href="./asset/scss/responsive/_home-responsive.css"
@@ -66,7 +65,9 @@
               />
             </a>
           </div>
-          <div class="header-right d-flex flex-column mt-md-3 mt-0">
+          <div
+            class="header-right d-flex flex-md-column mt-md-3 mt-0 flex-row gap-4 gap-md-0 align-items-center align-items-md-stretch"
+          >
             <div class="header-right-top">
               <ul class="header-right-list d-none d-md-flex gap-sm-1 p-0">
                 <li class="header-right__item">
@@ -92,6 +93,14 @@
                     Qui định & chính sách chung
                   </a>
                 </li>
+                <li class="header-right__item">
+                  <a href="#" class="header-right__link fw-normal">
+                    Đăng nhập
+                  </a>
+                </li>
+                <li class="header-right__item">
+                  <a href="#" class="header-right__link fw-normal"> Đăng kí </a>
+                </li>
               </ul>
             </div>
             <div class="header-right-center d-flex mb-2 mb-md-0">
@@ -105,6 +114,12 @@
             <div class="header-right__bottom d-none d-md-flex">
               Gợi ý từ khóa: Cao hồng sâm, Sâm tầm mật ong, Trà linh chi,...
             </div>
+            <a
+              href="login.html"
+              class="header-right__user d-md-none d-inline-block pointer"
+            >
+              <i class="fa-solid fa-user fs-1 text-red_bold"></i>
+            </a>
           </div>
         </div>
       </section>
@@ -834,7 +849,7 @@
                       </h5>
                       <div class="card-text pt-2">
                         <div
-                          class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                          class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                         >
                           <p class="me-3" style="font-size: 3.8rem">-14%</p>
                           <div class="text-start">
@@ -909,7 +924,7 @@
                       </h5>
                       <div class="card-text pt-2">
                         <div
-                          class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                          class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                         >
                           <p class="me-3" style="font-size: 3.8rem">-14%</p>
                           <div class="text-start">
@@ -984,7 +999,7 @@
                       </h5>
                       <div class="card-text pt-2">
                         <div
-                          class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                          class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                         >
                           <p class="me-3" style="font-size: 3.8rem">-14%</p>
                           <div class="text-start">
@@ -1059,7 +1074,7 @@
                       </h5>
                       <div class="card-text pt-2">
                         <div
-                          class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                          class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                         >
                           <p class="me-3" style="font-size: 3.8rem">-14%</p>
                           <div class="text-start">
@@ -1216,7 +1231,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -1294,7 +1309,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -1372,7 +1387,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -1450,7 +1465,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -1528,7 +1543,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -1606,7 +1621,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -1772,7 +1787,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -1850,7 +1865,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -1928,7 +1943,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -2006,7 +2021,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -2084,7 +2099,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -2162,7 +2177,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -2324,7 +2339,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -2402,7 +2417,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -2480,7 +2495,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -2558,7 +2573,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -2636,7 +2651,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -2714,7 +2729,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -2876,7 +2891,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -2954,7 +2969,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -3032,7 +3047,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -3110,7 +3125,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -3188,7 +3203,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -3266,7 +3281,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -3511,7 +3526,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -3589,7 +3604,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -3667,7 +3682,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_2 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -3766,11 +3781,10 @@
                     style="height: 450px; overflow: auto"
                   >
                     <div class="introduce-1">
-                      <h1 class="fw-bold text-danger">Nhân Sâm Hàn Quốc</h1>
+                      <h1 class="fw-bold text-red_2">Nhân Sâm Hàn Quốc</h1>
                       <p>
                         Cửa hàng K-GIN chuyên phân phối các loại
-                        <span class="fw-bold text-danger"
-                          >nhân sâm Hàn Quốc</span
+                        <span class="fw-bold text-red_2">nhân sâm Hàn Quốc</span
                         >, hồng sâm 6 năm tuổi, nấm linh chi và đông trùng hạ
                         thảo uy tín, giá tốt nhất thị trường.
                       </p>
@@ -3804,11 +3818,11 @@
                     </div>
 
                     <div class="introduce-2 mt-5">
-                      <h1 class="fw-bold text-danger">
+                      <h1 class="fw-bold text-red_2">
                         Nhân sâm Hàn Quốc là gì
                       </h1>
                       <p>
-                        <span class="fw-bold text-danger"
+                        <span class="fw-bold text-red_2"
                           >Nhân sâm Hàn Quốc</span
                         >
                         là tên gọi một số cây thân thảo có rễ và củ được dùng
@@ -3833,7 +3847,7 @@
                         </h2>
                         <p>
                           Theo như các nghiên cứu của y học hiện đại,
-                          <span class="fw-bold text-danger">nhân sâm</span> có
+                          <span class="fw-bold text-red_2">nhân sâm</span> có
                           các thành phần chính như
                           <b
                             >Ginsenoside (Saponin trong nhân sâm còn có tên gọi
@@ -3910,7 +3924,7 @@
                           2. Nhân sâm Hàn Quốc có tác dụng gì?
                         </h2>
                         <p>
-                          <span class="fw-bold text-danger"
+                          <span class="fw-bold text-red_2"
                             >Nhân sâm Hàn Quốc có tác dụng gì?</span
                           >
                           Và hiệu quả mang lại đối với cơ thể, sức khỏe như thế
@@ -4030,7 +4044,7 @@
                     </div>
 
                     <div class="introduce-3 mt-5">
-                      <h1 class="fw-bold text-danger">
+                      <h1 class="fw-bold text-red_2">
                         Các loại sâm Hàn Quốc tốt nhất hiện nay
                       </h1>
                       <p>
@@ -4064,7 +4078,7 @@
                       <div class="introduce-3-2 mt-4">
                         <h2 class="fw-bold">2. Hồng sâm</h2>
                         <p>
-                          <span class="fw-bold text-danger"
+                          <span class="fw-bold text-red_2"
                             >Hồng sâm Hàn Quốc</span
                           >
                           là những củ nhân sâm 6 năm tuổi được chọn lựa kỹ càng
@@ -4094,7 +4108,7 @@
                         <h2 class="fw-bold">3. Hắc sâm</h2>
                         <p>
                           So với nhân sâm và hồng sâm,
-                          <span class="fw-bold text-danger">hắc sâm</span> còn
+                          <span class="fw-bold text-red_2">hắc sâm</span> còn
                           khá mới mẻ trên thị trường, tuy nhiên hàm lượng chất
                           dinh dưỡng của hắc sâm lại vượt trội hơn cả. Hắc sâm
                           được chọn lựa từ những củ sâm to, tươi và đảm bảo chất
@@ -4177,13 +4191,13 @@
                     </div>
 
                     <div class="introduce-5 mt-5">
-                      <h1 class="fw-bold text-danger">
+                      <h1 class="fw-bold text-red_2">
                         Giá các sản phẩm từ nhân sâm tốt nhất hiện nay
                       </h1>
                       <p>
                         Trên thị trường hiện nay, có rất nhiều sản phẩm chế biến
                         từ nhân sâm, rất đa dạng và phong phú và
-                        <span class="fw-bold text-danger"
+                        <span class="fw-bold text-red_2"
                           >sâm hàn quốc giá bao nhiêu</span
                         >
                         đang là câu hỏi thắc mắc của nhiều khách hàng. Tại cửa
@@ -4209,7 +4223,7 @@
                           thuộc vào chất lượng sâm. Nếu củ sâm càng lớn, chất
                           lượng tốt, tỷ lệ khuyết tật ít thì giá thành càng cao.
                           Phổ biến nhất là
-                          <span class="fw-bold text-danger"
+                          <span class="fw-bold text-red_2"
                             >sâm khô hộp thiếc 300gr</span
                           >.
                         </p>
@@ -4965,6 +4979,149 @@
         </div>
         <div class="footer-end">Copyright 2021 thuộc về KGIN</div>
       </section>
+      <!-- VNP -->
+      <div class="call-now-button bg-golden" id="draggable">
+        <div>
+          <a href="tel:19004625" id="quickcallbutton" rel="nofollow">
+            <p class="call-text">19004625</p>
+            <div class="quick-alo-ph-circle active"></div>
+            <div class="quick-alo-ph-circle-fill active"></div>
+            <div class="quick-alo-ph-img-circle shake"></div>
+          </a>
+        </div>
+      </div>
+      <a href="#" class="scrollToTop btn-show" rel="nofollow">
+        <i class="fas fa-chevron-up"></i>
+      </a>
+      <div class="zalo-wrap bg-golden">
+        <a href="http://zalo.me/0907331930" class="zalo-sticky" rel="nofollow">
+          <img src="asset/img/home/zalo-icon.png" alt="" />
+        </a>
+      </div>
+      <div id="vnpchat" class="">
+        <div class="boxchat">
+          <!---->
+          <!---->
+          <div class="box_head" style="color: rgb(255, 255, 255)">
+            <div class="bar" style="background-color: rgb(244, 26, 26)">
+              <div title="K-GIN luôn sẵn sàng tư vấn" class="text_bar">
+                K-GIN luôn sẵn sàng tư vấn
+              </div>
+              <div
+                onclick="vnp.changeSizeMin({w:240,h:50})"
+                title="Minimize window"
+                class="box_minisize box_icon"
+              >
+                −
+              </div>
+              <div title="Stop chat" class="box_close box_icon">×</div>
+            </div>
+            <div class="box_info position_re">
+              <div class="box_user position_re">
+                <div class="box_avatar">
+                  <div>
+                    <img
+                      src="https://core.vchat.vn/upload/brand/2022/04/04/vc-624ab1315d154-1649062193.png"
+                      class="avatar_img"
+                    />
+                  </div>
+                </div>
+                <div class="box_name">
+                  <p title="Hồng sâm Hàn Quốc K-GIN" class="fullname">
+                    Hồng sâm Hàn Quốc K-GIN
+                  </p>
+                  <p title="Call:19004625" class="phone">
+                    <a
+                      href="javascript:void(0)"
+                      class="f12"
+                      style="color: rgb(244, 26, 26)"
+                      >☎: 19004625</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="box_rate flex">
+                <span title="Thích" id="like" class="rate_icon"
+                  ><svg color="inherit" class="lc-1mpchac" viewBox="0 0 32 32">
+                    <path
+                      d="M11,14h1.47c.35-.5.9-1.35,1.64-2.53a3.68,3.68,0,0,0,.23-.44,6.34,6.34,0,0,0,.52-2.42C15.05,6.82,15.51,6,17,6c1.66,0,2.65,1.06,2.92,2.86V14h3c3,0,3.76,2.26,2.51,6.65S23.35,26,19.93,26H14a1,1,0,0,1-.71-.3L11.55,24H11v0a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V14a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1Zm0,2v6h1a1,1,0,0,1,.7.3L14.37,24H20c2.37,0,2.44-.15,3.51-3.9.94-3.31.68-4.1-.6-4.1h-4A1,1,0,0,1,18,15V9.08C17.87,8.27,17.54,8,17,8a5.27,5.27,0,0,0-.13.81,8.19,8.19,0,0,1-.69,3.06,5.37,5.37,0,0,1-.36.66,34.81,34.81,0,0,1-2.06,3.11A1,1,0,0,1,13,16ZM7,15v8H9V15Z"
+                    ></path></svg></span
+                ><span title="Không thích" id="dislike" class="rate_icon"
+                  ><svg color="inherit" class="lc-1mpchac" viewBox="0 0 32 32">
+                    <path
+                      d="M20,19H18.56c-.35.5-.91,1.35-1.64,2.53a3.75,3.75,0,0,0-.24.44,6.74,6.74,0,0,0-.52,2.42C16,26.18,15.49,27,14,27c-1.66,0-2.74-1.2-3-3V19H8c-3,0-3.64-2.26-2.4-6.65S7.58,7,11,7h6a1.11,1.11,0,0,1,.75.3L19.48,9H20V9a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1V19a1,1,0,0,1-1,1H21a1,1,0,0,1-1-1Zm0-2V11h-.94a1,1,0,0,1-.71-.3L16.65,9H11c-2.38,0-2.45.15-3.51,3.9C6.58,16.21,6.75,17,8,17h4a1,1,0,0,1,1,1v5.92c.12.81.46,1.07,1,1.08a4.54,4.54,0,0,0,.12-.81,8.39,8.39,0,0,1,.69-3.06q.17-.33.36-.66a34.1,34.1,0,0,1,2.07-3.11,1,1,0,0,1,.76-.36Zm4,1V10H22v8Z"
+                    ></path></svg
+                ></span>
+              </div>
+            </div>
+          </div>
+          <div class="h-100">
+            <div class="pre_chat">
+              <div class="pre_greet_chat">
+                <div class="pre_container">
+                  <div>
+                    <div>
+                      <p class="mgbt5 f11">
+                        <img
+                          src="https://core.vchat.vn/upload/brand/2022/04/04/vc-624ab1315d154-1649062193.png"
+                          class="avatar_line"
+                        />
+                        Hồng sâm Hàn Quốc K-GIN
+                      </p>
+                      <p class="text">
+                        Xin chào! Bạn có cần chúng tôi hỗ trợ gì không, đừng
+                        ngại hãy chat với chúng tôi ngay đi
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tc pre_btn zi10">
+                  <span class="btn btn-blue">Chat luôn</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="brand-home">
+            Power by
+            <a
+              href="//be.vchat.vn?utm_campaign=vnp_client_2020&amp;utm_medium=referral&amp;utm_source=vnp_client_2020"
+              target="_blank"
+              >vChat.vn</a
+            >
+          </div>
+          <div class="contact_guest">
+            <!---->
+            <!---->
+          </div>
+          <div class="footer_ads">
+            <span class="footer_dot open_ads">⋯</span>
+            <!---->
+          </div>
+        </div>
+        <!---->
+      </div>
+      <div id="vnpicon" class="">
+        <div class="pdlr10 tr">
+          <div
+            onclick="vnp.changeSizeMax()"
+            class="rectangle"
+            style="background-color: rgb(255, 0, 0)"
+          >
+            <span class="btn_icon"
+              ><span class="icon_flat flaticon-comment"></span
+            ></span>
+            <span class="btn_text">Chat ngay với KGIN</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-mobile-sticky-wrap">
+        <div class="menu-mobile-sticky">
+          <a class="phone-call" href="tel:19004625" id="" rel="nofollow">
+            <i class="fas fa-phone-alt text-red_bold"></i>
+            <span>1900.4625</span>
+          </a>
+        </div>
+      </div>
     </div>
   </body>
 

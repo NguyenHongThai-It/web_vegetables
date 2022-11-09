@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
+    <title>Document</title>
     <!-- FONT AWESOME -->
     <link
       rel="stylesheet"
@@ -21,13 +21,34 @@
       rel="stylesheet"
     />
 
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+
+    <!-- SLICK CAROUSEL -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CUSTOM -->
     <link rel="stylesheet" href="./asset/scss/custom.css" />
     <link rel="stylesheet" href="./asset/scss/base/common.css" />
 
-    <link rel="stylesheet" href="./asset/scss/css/about.css" />
+    <link rel="stylesheet" href="./asset/scss/css/album.css" />
     <link
       rel="stylesheet"
-      href="./asset/scss/responsive/_about-responsive.css"
+      href="./asset/scss/responsive/_album-responsive.css"
     />
   </head>
 
@@ -47,6 +68,7 @@
               />
             </a>
           </div>
+
           <div class="header-right d-flex flex-column mt-md-3 mt-0">
             <div class="header-right-top">
               <ul class="header-right-list d-none d-md-flex gap-sm-1 p-0">
@@ -89,7 +111,6 @@
           </div>
         </div>
       </section>
-
       <!-- Slider -->
       <section class="navigate mt-3 mt-md-0" id="navigate">
         <ul
@@ -736,203 +757,117 @@
           </div>
         </div>
       </section>
-
-      <!-- Content -->
-      <section id="brand" class="brand">
-        <div style="background-image: url(./asset/img/about/bg-about-1.jpg)">
-          <div class="container text-white lh-2 fs-4 p-5">
-            <h1 class="text-center fw-bold mt-5">
-              Giới thiệu về thương hiệu K-GIN
-            </h1>
-            <p>
-              Xin kính chào quý khách! <br />
-              Chào mừng quý khách đến với Hồng sâm Hàn Quốc K-GIN! Được thành
-              lập từ năm 2008, K-GIN luôn mang trong mình sứ mệnh phục vụ quý
-              khách hàng những sản phẩm thảo dược Hàn Quốc có chất lượng tốt
-              nhất. Chúng tôi nỗ lực tạo dựng niềm tin nơi khách hàng bằng chất
-              lượng sản phẩm và thái độ phục vụ tận tình nhất. Với K-GIN, khách
-              hàng không phải là thượng đế mà là đồng nghiêp, là người bạn,
-              người thân trong gia đình!
-            </p>
-            <p>
-              Đến nay, công ty đã xây dựng được hệ thống gồm 5 showroom bán hàng
-              trực tiếp tại Hà Nội và thành phố Hồ Chí Minh. Bên cạnh đó, K-GIN
-              cam kết phục vụ quý khách hàng trên toàn quốc qua website bán hàng
-              online Kgin.com.vn, Hotline
-              <span class="fw-bold text-warning">19004625</span> (Zalo, sms:
-              <span class="fw-bold text-warning">0936.319.818</span>)
-            </p>
-            <p>
-              K-GIN trực tiếp phân phối sản phẩm của các thương hiệu nổi tiếng
-              như: Taewoong Food, Bio Science, Pocheon Insam, Daedoong,… Ngoài
-              ra, K-GIN đang thúc đẩy việc hợp tác với các thương hiệu hồng sâm
-              nội địa nổi tiếng tại Hàn Quốc, điển hình là Cheon Ji Yang, hứa
-              hẹn sẽ mang tới cho khách hàng những sản phẩm có chất lượng hàng
-              đầu, bồi bổ sức khỏe tốt nhất.
-            </p>
-            <p class="text-center fw-bold text-warning">
-              ” Nếu bạn mất tiền, bạn mất rất ít.<br />
-              Nếu bạn mất uy tín, bạn mất rất nhiều.<br />
-              Nếu bạn mất sức khỏe, bạn mất tất cả”
-            </p>
-            <p class="mb-5">
-              Đây là kim chỉ nam cho mọi hoạt động của công ty, với sự nỗ lực
-              không ngừng vì khách hàng, K-GIN tự hào mang lại sức khỏe và niềm
-              tin cho khách hàng.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <div style="background-image: url(./asset/img/about/Background.jpg)">
-        <div class="container lh-2 fs-4 p-5">
-          <section id="product" class="product">
-            <div class="content">
-              <h1 class="text-center fw-bold mt-5 mb-5">
-                Giới thiệu về các dòng sản phẩm mà K-GIN đang kinh doanh
+      <!-- Container -->
+      <div
+        class="main bg-leather"
+        style="background-image: url(./asset/img/policy/Background.jpg)"
+      >
+        <div class="container">
+          <section id="carousel" class="carousel">
+            <div class="content bg-white p-4 m-auto mt-5" style="width: 65%">
+              <h1 class="fw-bold text-center">
+                Cửa hàng Hồng Sâm Hàn Quốc K-Gin 21 Tây Sơn, HN
               </h1>
-              <p>
-                K-GIN hiện đang nhập khẩu trực tiếp và phục vụ quý khách hàng
-                với 4 dòng sản phẩm chính bao gồm: Hồng sâm Hàn Quốc, Nấm linh
-                chi Hàn Quốc, Đong trùng hạ thảo Hàn Quốc, và các chế phẩm từ
-                thảo dược Hàn Quốc khác
-              </p>
-              <h3 class="fw-bold">1. Sâm Hàn Quốc</h3>
-              <p>
-                Xứ sở Kim Chi được biết đến như là thủ phủ của nhân sâm, thiên
-                thời – địa lợi – nhân hòa đã tạo nên những củ nhân sâm tươi có
-                chất lượng hảo hạng nhất. Với kinh nghiệm hàng ngàn năm trồng,
-                khai thác và chế biến nhân sâm, các bổ phẩm cho sức khỏe từ nhân
-                sâm Hàn Quốc đang được ưa chuộng trên toàn thế giới.
-              </p>
-              <p>
-                K-GIN tự hào mang đến cho quý khách hàng các bổ phẩm cao cấp từ
-                nhân sâm tươi Hàn Quốc: Hồng sâm khô, Cao Hồng sâm, Hồng sâm Tẩm
-                mật ong, Tinh chất hồng sâm,… Đây đều là những sản phẩm được
-                khách hàng lựa chọn và tin dùng, rất hiệu quả trong việc tăng
-                cường sức khỏe, phòng chống bệnh tật và điều hòa cơ thể.
-              </p>
-              <h3 class="fw-bold">2. Linh chi Hàn Quốc</h3>
-              <p>
-                Nấm linh chi hay còn được gọi với nhiều tên ưu ái khác như: nấm
-                trường thọ, vạn niên nhung,… Nấm linh chi có tác dụng làm chậm
-                quá trình lão hóa, bảo vệ cơ thể khỏi các tác nhân độc tố từ môi
-                trường bên ngoài. Nhiều công trình nghiên cứu và công bố khoa
-                học đã chứng minh về thành phần dược tính cũng như tác dụng thần
-                kỳ của nấm linh chi đối với sức khỏe.
-              </p>
-              <p>
-                Công ty chúng tôi hiện đang phân phối tới quý khách hàng các sản
-                phẩm bao gồm: nấm linh chi khô, cao linh chi và trà linh chi.
-              </p>
-              <h3 class="fw-bold">3 Đông trùng hạ thảo Hàn Quốc</h3>
-              <p>
-                Đông trùng hạ thảo Hàn Quốc được lấy giống từ Đông trùng hạ thảo
-                Tây Tạng, nuôi trồng dựa trên trên quy trình công nghệ hiên đại
-                và tiên tiến hàng đầu, đảm bảo chất lượng tốt nhất. Đông trùng
-                hạ thảo có công dụng bồi bổ sức khỏe nhanh chóng, tăng cường
-                hoạt động của các chức năng trong cơ thể. Bên cạnh đó, loại thần
-                dược này còn được biết tới như một loại bảo vật hồi xuân sinh
-                lực.
-              </p>
-              <p>
-                K-GIN hiện đang kinh doanh các sản phẩm chính từ Đông trùng hạ
-                thảo bao gồm tinh chất đông trùng hạ thảo và đông trùng hạ thảo
-                dạng viên.
-              </p>
-              <h3 class="fw-bold">
-                4. Các bổ phẩm từ thảo dược thiên nhiên Hàn Quốc
-              </h3>
-              <p>
-                Bên cạnh các loại thảo dược như sâm, linh chi, đông trùng hạ
-                thảo, Hàn Quốc còn có vô số các loại thảo dược và các chế phẩm
-                có lợi cho sức khỏe khác được K-GIN kinh doanh như: An cung ngưu
-                hoàng hoàn, bổ gan giải rượu Hàn Quốc,…
-              </p>
-            </div>
-          </section>
 
-          <section id="shop-system" class="shop-system">
-            <div class="content mb-5 pt-5">
-              <h1 class="text-danger fw-bold text-center">HỆ THỐNG CỬA HÀNG</h1>
+              <div class="carousel-for">
+                <div class="carousel-for__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
 
-              <div
-                class="shop-system__img bg-white p-3 mt-4 transform-scale-bigImg overflow-hidden mx-auto"
-              >
-                <img
-                  src="https://via.placeholder.com/1200x400"
-                  width="90%"
-                  alt=""
-                />
-              </div>
-            </div>
+                <div class="carousel-for__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
 
-            <div class="row p-5 bg-white">
-              <div class="col-12 pb-4 pb-md-0 col-md-6 pe-md-4">
-                <h2 class="fw-bold">
-                  <i class="fa-solid fa-store"></i>
-                  Cửa hàng Hồng Sâm KGIN 51 Võ Thị Sáu - Phường 6 - Quận 3 -
-                  TP.HCM
-                </h2>
-                <br />
-                <p>
-                  Giao hàng nội thành: Miễn phí vận chuyển với đơn hàng từ
-                  500.000đ
-                </p>
-                <p>Giao nhanh trong 2h – Nhận hàng thanh toán</p>
-                <p>
-                  Hotline: <span class="fw-bold">19004625</span> (Zalo, sms:
-                  <span class="fw-bold"> 0936.319.818</span>)
-                </p>
+                <div class="carousel-for__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
+
+                <div class="carousel-for__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
+
+                <div class="carousel-for__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
+
+                <div class="carousel-for__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
+
+                <div class="carousel-for__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
+
+                <div class="carousel-for__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
+
+                <div class="carousel-for__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
+
+                <div class="carousel-for__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
               </div>
 
-              <div class="col-12 col-md-6 pt-5 pt-md-0 ps-md-4 auto-border">
-                <h2 class="fw-bold">Hệ thống cửa hàng</h2>
-                <br />
-                <p>
-                  <a href="#" class="shop-system--branch">
-                    <i class="fa-solid fa-store"></i>
-                    Cửa hàng Hồng Sâm KGIN 51 Võ Thị Sáu - Phường 6 - Quận 3 -
-                    TP.HCM
-                  </a>
-                </p>
-                <p>
-                  <a href="#" class="shop-system--branch">
-                    <i class="fa-solid fa-store"></i>
-                    Cửa hàng Hồng Sâm KGIN 577 Nguyễn Trãi - Thanh Xuân Nam -
-                    Thanh Xuân - Hà Nội ( Đối diện Pico Trung Văn)
-                  </a>
-                </p>
-                <p>
-                  <a href="#" class="shop-system--branch">
-                    <i class="fa-solid fa-store"></i>
-                    Cửa hàng Hồng Sâm KGIN 149 Cầu Giấy - Quan Hoa - Cầu Giấy -
-                    Hà Nội
-                  </a>
-                </p>
-                <p>
-                  <a href="#" class="shop-system--branch">
-                    <i class="fa-solid fa-store"></i>
-                    Cửa hàng Hồng Sâm KGIN 21 Tây Sơn - Quan Trung- Đống Đa - Hà
-                    Nội
-                  </a>
-                </p>
-                <p>
-                  <a href="#" class="shop-system--branch">
-                    <i class="fa-solid fa-store"></i>
-                    Cửa hàng Hồng Sâm KGIN 121A Phố Huế - Hai Bà Trưng - Hà Nội
-                    (Ngã tư Phố Huế - Tuệ Tĩnh)
-                  </a>
-                </p>
+              <div class="carousel-nav">
+                <div class="carousel-nav__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
+
+                <div class="carousel-nav__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
+
+                <div class="carousel-nav__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
+
+                <div class="carousel-nav__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
+
+                <div class="carousel-nav__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
+
+                <div class="carousel-nav__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
+
+                <div class="carousel-nav__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
+
+                <div class="carousel-nav__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
+
+                <div class="carousel-nav__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
+
+                <div class="carousel-nav__item">
+                  <img src="https://via.placeholder.com/800x533" alt="" />
+                </div>
               </div>
             </div>
           </section>
 
           <section id="photo-library" class="photo-library">
-            <div class="mt-5 row text-center">
-              <h1 class="text-danger content mb-2 fw-bold text-center">
-                THƯ VIỆN ẢNH
-              </h1>
+            <div
+              class="item-label--goldenBackground item-label--clipPath p-1 mt-5 m-auto"
+              style="width: 20rem"
+            >
+              <div
+                class="item-label--redTextFeild item-label--clipPath label-Advertise"
+                style="padding: 7px"
+              >
+                <span class="fs-2 label-Advertise fw-bold">Các album khác</span>
+              </div>
+            </div>
+            <div class="mb-5 row text-center">
               <div class="col-6 col-md-4 col-lg-3 mt-4">
                 <a href="#">
                   <div class="transform-scale-bigImg p-2">
@@ -1073,7 +1008,6 @@
         </div>
 
         <!-- Footer -->
-
         <section class="footer" id="footer">
           <div
             class="footer__background"
@@ -1362,7 +1296,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-5 p-0 ps-3">
+                <div class="col-md-5 p-0">
                   <span class="fw-bold pb-3 ps-1">MUA SẮM TIỆN LỢI</span>
                   <div class="row mt-3">
                     <div class="col-md-7 p-0 ps-3">
@@ -1467,6 +1401,10 @@
       </div>
     </div>
   </body>
+
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
   <!-- BOOTSTRAP -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -1474,5 +1412,15 @@
     crossorigin="anonymous"
   ></script>
 
+  <!-- SLICK CAROUSEL -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <!-- CUSTOM -->
   <script src="./asset/js/common.js"></script>
+  <script src="./asset/js/album.js"></script>
 </html>
