@@ -1,0 +1,10 @@
+.Checkout__Left {
+  min-width: 40%;
+}
+
+.Checkout__Right {
+  flex: 1;
+}
+.title {
+  color: var(--bs-red_bold);
+}
