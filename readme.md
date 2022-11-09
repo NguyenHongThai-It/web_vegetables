@@ -38,3 +38,9 @@ https://kgin.com.vn/
   https://kgin.com.vn/thank-you/?order_id=10992
 - News-album
   https://kgin.com.vn/tin-tuc/album/cua-hang-2/
+
+- Fix Header
+  + Log in
+  + Sign in
+- Profile
+- 
