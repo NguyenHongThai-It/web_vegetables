@@ -42,3 +42,9 @@ $(".blog-carousel").slick({
     // instead of a settings object
   ],
 });
+var myModal = document.getElementById("exampleModal");
+var myInput = document.getElementById("exampleModal");
+
+myModal.addEventListener("shown.bs.modal", function () {
+  myInput.focus();
+});
