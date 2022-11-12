@@ -13,6 +13,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- BOOTSTRAP -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <!-- FONT - roboto-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,7 +57,7 @@
       <!-- Header -->
       <section class="container header" id="header">
         <div
-          class="header-wrap d-flex align-items-md-start align-items-center justify-content-md-between justify-content-center flex-column flex-md-row"
+          class="header-wrap d-flex align-items-md-start align-items-center justify-content-md-between justify-content-center flex-column flex-lg-row"
         >
           <div class="header-left">
             <a href="./home.html" class="header-left__link">
@@ -61,8 +68,9 @@
               />
             </a>
           </div>
-
-          <div class="header-right d-flex flex-column mt-md-3 mt-0">
+          <div
+            class="header-right d-flex flex-md-column align-items-center align-items-md-stretch mt-md-3 mt-0"
+          >
             <div class="header-right-top">
               <ul class="header-right-list d-none d-md-flex gap-sm-1 p-0">
                 <li class="header-right__item">
@@ -93,6 +101,19 @@
                     Qui định & chính sách chung
                   </a>
                 </li>
+                <li class="header-right__item">
+                  <a href="./login.html" class="header-right__link fw-normal">
+                    Đăng nhập
+                  </a>
+                </li>
+                <li class="header-right__item">
+                  <a
+                    href="./register.html"
+                    class="header-right__link fw-normal"
+                  >
+                    Đăng kí
+                  </a>
+                </li>
               </ul>
             </div>
             <div class="header-right-center d-flex mb-2 mb-md-0">
@@ -108,6 +129,18 @@
             <div class="header-right__bottom d-none d-md-flex">
               Gợi ý từ khóa: Cao hồng sâm, Sâm tầm mật ong, Trà linh chi,...
             </div>
+            <a
+              href="profile.html"
+              class="header-right__user d-md-none d-inline-block pointer ms-3"
+            >
+              <i class="fa-solid fa-user fs-1 text-red_bold"></i>
+            </a>
+            <a
+              href="cart.html"
+              class="header-right__user d-md-none d-inline-block pointer ms-3"
+            >
+              <i class="fa-solid fa-cart-shopping fs-1 text-red_bold"></i>
+            </a>
           </div>
         </div>
       </section>
@@ -231,7 +264,7 @@
                     </a>
                   </li>
                   <li class="navigate-sublist__item">
-                    <a href=./product.html" class="navigate-sublist__link">
+                    <a href="./product.html" class="navigate-sublist__link">
                       Tinh dầu thông đỏ
                     </a>
                   </li>
@@ -370,12 +403,16 @@
                 </a>
               </li>
               <li class="navigate-sublist__item">
-                <a href="./product.html" class="navigate-sublist__link"> Sản phẩm khác </a>
+                <a href="./product.html" class="navigate-sublist__link">
+                  Sản phẩm khác
+                </a>
               </li>
             </ol>
           </li>
           <li class="navigate-list__item">
-            <a href="./product.html" class="navigate-list__link"> Hệ thống cửa hàng </a>
+            <a href="./product.html" class="navigate-list__link">
+              Hệ thống cửa hàng
+            </a>
           </li>
           <li class="navigate-list__item">
             <a href="./product.html" class="navigate-list__link">
@@ -712,8 +749,6 @@
             </ul>
           </ul>
         </div>
-
-       
       </section>
 
       <!-- Contaienr -->
@@ -744,7 +779,7 @@
                 <div class="col-lg-12 main_cart__">
                   <section class="section-news">
                     <div class="box-news box_cart__">
-                      <h1 class="title p-3 fw-bold">Giỏ hàng</h1>
+                      <h1 class="title p-3 fw-bold">Lịch sử đặt hàng</h1>
                       <div class="cart-wrap">
                         <form
                           class="woocommerce-cart-form"
@@ -996,7 +1031,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Nước Đông Trùng Hạ Thảo
@@ -1009,7 +1044,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Hồng Sâm Linh Chi Hàn Quốc
@@ -1022,7 +1057,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Hắc sâm
@@ -1035,7 +1070,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Cao linh chi hộp gỗ
@@ -1048,7 +1083,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Kẹo sâm không đường
@@ -1061,7 +1096,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Sâm mật ong Hàn Quốc
@@ -1074,7 +1109,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Đông trùng hạ thảo dạng viên
@@ -1087,7 +1122,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Sâm tẩm mật ong nguyên củ
@@ -1203,7 +1238,7 @@
                       >
                     </div>
                   </div>
-                  <div class="col-md-5 p-0 ps-3 ps-md-0">
+                  <div class="col-md-5 p-0 ps-3">
                     <div
                       class="footer__mail d-flex align-items-center align-items-md-start align-items-lg-center"
                     >

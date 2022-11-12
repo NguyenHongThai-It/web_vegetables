@@ -13,6 +13,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- BOOTSTRAP -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <!-- FONT - roboto-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,7 +44,7 @@
       <!-- Header -->
       <section class="container header" id="header">
         <div
-          class="header-wrap d-flex align-items-md-start align-items-center justify-content-md-between justify-content-center flex-column flex-md-row"
+          class="header-wrap d-flex align-items-md-start align-items-center justify-content-md-between justify-content-center flex-column flex-lg-row"
         >
           <div class="header-left">
             <a href="./home.html" class="header-left__link">
@@ -48,8 +55,9 @@
               />
             </a>
           </div>
-
-          <div class="header-right d-flex flex-column mt-md-3 mt-0">
+          <div
+            class="header-right d-flex flex-md-column align-items-center align-items-md-stretch mt-md-3 mt-0"
+          >
             <div class="header-right-top">
               <ul class="header-right-list d-none d-md-flex gap-sm-1 p-0">
                 <li class="header-right__item">
@@ -80,6 +88,19 @@
                     Qui định & chính sách chung
                   </a>
                 </li>
+                <li class="header-right__item">
+                  <a href="./login.html" class="header-right__link fw-normal">
+                    Đăng nhập
+                  </a>
+                </li>
+                <li class="header-right__item">
+                  <a
+                    href="./register.html"
+                    class="header-right__link fw-normal"
+                  >
+                    Đăng kí
+                  </a>
+                </li>
               </ul>
             </div>
             <div class="header-right-center d-flex mb-2 mb-md-0">
@@ -88,11 +109,25 @@
                 class="header-right__search w-100"
                 placeholder="Nhập tên sản phẩm cần tìm ..."
               />
-              <button class="header-right__btn">Tìm kiếm</button>
+              <a href="./search.html " class="d-flex">
+                <button class="header-right__btn">Tìm kiếm</button>
+              </a>
             </div>
             <div class="header-right__bottom d-none d-md-flex">
               Gợi ý từ khóa: Cao hồng sâm, Sâm tầm mật ong, Trà linh chi,...
             </div>
+            <a
+              href="profile.html"
+              class="header-right__user d-md-none d-inline-block pointer ms-3"
+            >
+              <i class="fa-solid fa-user fs-1 text-red_bold"></i>
+            </a>
+            <a
+              href="cart.html"
+              class="header-right__user d-md-none d-inline-block pointer ms-3"
+            >
+              <i class="fa-solid fa-cart-shopping fs-1 text-red_bold"></i>
+            </a>
           </div>
         </div>
       </section>
@@ -1159,27 +1194,27 @@
                         class="item__img--hover d-flex align-items-center justify-content-center"
                       >
                         <img
-                          src="./asset/img/search/kgin-nam-linh-chi-nui-dai-dien-.jpg"
+                          src="./asset/img/home/cao-hslc-dai-dien-sua.jpg"
                           class="img-ani card-img-top"
                           alt="..."
                         />
                       </div>
                       <div class="card-body">
                         <h5 class="item__tittle--hover card-title mb-4 fs-4">
-                          <b>NẤM LINH CHI NÚI ĐÁ VÀNG HÀN QUỐC</b>
+                          <b>Cao Hồng Sâm Linh Chi Pocheon Hàn Quốc</b>
                         </h5>
                         <div class="card-text pt-2">
                           <div
-                            class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                            class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                           >
-                            <p class="me-3" style="font-size: 3.8rem">-8%</p>
+                            <p class="me-3" style="font-size: 3.8rem">-14%</p>
                             <div class="text-start">
                               <span
                                 class="fs-4 text-decoration-line-through fw-light text-secondary ms-1"
                               >
-                                2.500.000 đ</span
+                                1.400.000 đ</span
                               >
-                              <p class="media-fontsize-lg lh-1">2.300.000 đ</p>
+                              <p class="media-fontsize-lg lh-1">1.200.000 đ</p>
                             </div>
                           </div>
                         </div>
@@ -1192,13 +1227,10 @@
                                 class="item-btn--textFeild"
                                 style="padding: 0.2rem 1rem"
                               >
-                                <a
-                                  href="#"
-                                  class="media-fontsize-sm btn btn-light_1"
-                                  role="button"
-                                  data-bs-toggle="button"
+                                <span
+                                  class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
                                   ><i class="fa-solid fa-paper-plane me-3"> </i
-                                  >Xem nhanh</a
+                                  >Xem nhanh</span
                                 >
                               </div>
                             </div>
@@ -1210,10 +1242,8 @@
                                 style="padding: 0.2rem 1rem"
                               >
                                 <a
-                                  href="#"
+                                  href="./detail-product.html"
                                   class="media-fontsize-sm btn btn-light_1"
-                                  role="button"
-                                  data-bs-toggle="button"
                                 >
                                   <b
                                     >Xem chi tiết<i
@@ -1227,31 +1257,102 @@
                       </div>
                     </div>
                   </div>
+
                   <div class="col-lg-4 col-md-6 col-12 m-auto auto-width">
                     <div class="card mt-4" style="background: var(--ligth_1)">
                       <div
                         class="item__img--hover d-flex align-items-center justify-content-center"
                       >
                         <img
-                          src="./asset/img/search/sam-kho-150g-anh-dai-dien.jpg"
+                          src="./asset/img/home/nhan-sam-tuoi-anh-dai-dien.jpg"
                           class="img-ani card-img-top"
                           alt="..."
                         />
                       </div>
                       <div class="card-body">
                         <h5 class="item__tittle--hover card-title mb-4 fs-4">
-                          <b>Hồng sâm khô hộp thiếc 300gr Hàn Quốc</b>
+                          <b>Nhân sâm tươi Hàn Quốc 6 củ/kg</b>
                         </h5>
                         <div class="card-text pt-2">
                           <div
-                            class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                            class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                           >
-                            <p class="me-3" style="font-size: 3.8rem">-8%</p>
+                            <p class="me-3" style="font-size: 3.8rem">-20%</p>
                             <div class="text-start">
                               <span
                                 class="fs-4 text-decoration-line-through fw-light text-secondary ms-1"
                               >
-                                3.050.000 đ</span
+                                4.000.000 đ</span
+                              >
+                              <p class="media-fontsize-lg lh-1">3.200.000 đ</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body p-4 pt-3">
+                        <div class="row">
+                          <div class="col-6 col-md-6 col-lg-6">
+                            <div class="item-btn--goldenBackground">
+                              <div
+                                class="item-btn--textFeild"
+                                style="padding: 0.2rem 1rem"
+                              >
+                                <span
+                                  class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
+                                  ><i class="fa-solid fa-paper-plane me-3"> </i
+                                  >Xem nhanh</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-6 col-md-6 col-lg-6">
+                            <div class="item-btn--goldenBackground">
+                              <div
+                                class="item-btn--textFeild"
+                                style="padding: 0.2rem 1rem"
+                              >
+                                <a
+                                  href="./detail-product.html"
+                                  class="media-fontsize-sm btn btn-light_1"
+                                >
+                                  <b
+                                    >Xem chi tiết<i
+                                      class="fa-solid fa-angles-right ms-2"
+                                    ></i></b
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 col-12 m-auto auto-width">
+                    <div class="card mt-4" style="background: var(--ligth_1)">
+                      <div
+                        class="item__img--hover d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="./asset/img/home/cao-1-lo-anh-dai-dien-sua.jpg"
+                          class="img-ani card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="item__tittle--hover card-title mb-4 fs-4">
+                          <b>Cao Sâm Thượng Hạng Daedong 240gr</b>
+                        </h5>
+                        <div class="card-text pt-2">
+                          <div
+                            class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
+                          >
+                            <p class="me-3" style="font-size: 3.8rem">-10%</p>
+                            <div class="text-start">
+                              <span
+                                class="fs-4 text-decoration-line-through fw-light text-secondary ms-1"
+                              >
+                                3.105.000 đ</span
                               >
                               <p class="media-fontsize-lg lh-1">2.800.000 đ</p>
                             </div>
@@ -1266,13 +1367,10 @@
                                 class="item-btn--textFeild"
                                 style="padding: 0.2rem 1rem"
                               >
-                                <a
-                                  href="#"
-                                  class="media-fontsize-sm btn btn-light_1"
-                                  role="button"
-                                  data-bs-toggle="button"
+                                <span
+                                  class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
                                   ><i class="fa-solid fa-paper-plane me-3"> </i
-                                  >Xem nhanh</a
+                                  >Xem nhanh</span
                                 >
                               </div>
                             </div>
@@ -1284,10 +1382,8 @@
                                 style="padding: 0.2rem 1rem"
                               >
                                 <a
-                                  href="#"
+                                  href="./detail-product.html"
                                   class="media-fontsize-sm btn btn-light_1"
-                                  role="button"
-                                  data-bs-toggle="button"
                                 >
                                   <b
                                     >Xem chi tiết<i
@@ -1301,127 +1397,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-6 col-12 m-auto auto-width">
-                    <div class="card mt-4" style="background: var(--ligth_1)">
-                      <div
-                        class="item__img--hover d-flex align-items-center justify-content-center"
-                      >
-                        <img
-                          src="./asset/img/search/dt-go-den-1.jpg"
-                          class="img-ani card-img-top"
-                          alt="..."
-                        />
-                      </div>
-                      <div class="card-body">
-                        <h5 class="item__tittle--hover card-title mb-4 fs-4">
-                          <b>Đông Trùng Hạ Thảo Dạng Nước Hộp Gỗ Đen 60 Gói</b>
-                        </h5>
-                        <div class="card-text pt-2">
-                          <div
-                            class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
-                          >
-                            <p class="me-3" style="font-size: 3.8rem">-19%</p>
-                            <div class="text-start">
-                              <span
-                                class="fs-4 text-decoration-line-through fw-light text-secondary ms-1"
-                              >
-                                1.850.000 đ</span
-                              >
-                              <p class="media-fontsize-lg lh-1">1.500.000 đ</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-body p-4 pt-3">
-                        <div class="row">
-                          <div class="col-6 col-md-6 col-lg-6">
-                            <div class="item-btn--goldenBackground">
-                              <div
-                                class="item-btn--textFeild"
-                                style="padding: 0.2rem 1rem"
-                              >
-                                <a
-                                  href="#"
-                                  class="media-fontsize-sm btn btn-light_1"
-                                  role="button"
-                                  data-bs-toggle="button"
-                                  ><i class="fa-solid fa-paper-plane me-3"> </i
-                                  >Xem nhanh</a
-                                >
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-6 col-md-6 col-lg-6">
-                            <div class="item-btn--goldenBackground">
-                              <div
-                                class="item-btn--textFeild"
-                                style="padding: 0.2rem 1rem"
-                              >
-                                <a
-                                  href="#"
-                                  class="media-fontsize-sm btn btn-light_1"
-                                  role="button"
-                                  data-bs-toggle="button"
-                                >
-                                  <b
-                                    >Xem chi tiết<i
-                                      class="fa-solid fa-angles-right ms-2"
-                                    ></i></b
-                                ></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Pagination -->
-                  <nav aria-label="Page navigation example">
-                    <ul
-                      class="pagination"
-                      style="display: flex; justify-content: center"
-                    >
-                      <li class="page-item" style="width: 4.3rem; height: 4rem">
-                        <a
-                          class="h-100 w-100 fs-2 d-flex justify-content-center align-items-center page-link"
-                          href="#"
-                          aria-label="Previous"
-                        >
-                          <span aria-hidden="true">&laquo;</span>
-                        </a>
-                      </li>
-                      <li class="page-item" style="width: 4.3rem; height: 4rem">
-                        <a
-                          class="h-100 w-100 fs-2 d-flex justify-content-center align-items-center page-link"
-                          href="#"
-                          >1</a
-                        >
-                      </li>
-                      <li class="page-item" style="width: 4.3rem; height: 4rem">
-                        <a
-                          class="h-100 w-100 fs-2 d-flex justify-content-center align-items-center page-link"
-                          href="#"
-                          >2</a
-                        >
-                      </li>
-                      <li class="page-item" style="width: 4.3rem; height: 4rem">
-                        <a
-                          class="h-100 w-100 fs-2 d-flex justify-content-center align-items-center page-link"
-                          href="#"
-                          >3</a
-                        >
-                      </li>
-                      <li class="page-item" style="width: 4.3rem; height: 4rem">
-                        <a
-                          class="h-100 w-100 fs-2 d-flex justify-content-center align-items-center page-link"
-                          href="#"
-                          aria-label="Next"
-                        >
-                          <span aria-hidden="true">&raquo;</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
                 </div>
               </div>
             </div>
@@ -1541,7 +1516,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Nước Đông Trùng Hạ Thảo
@@ -1554,7 +1529,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Hồng Sâm Linh Chi Hàn Quốc
@@ -1567,7 +1542,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Hắc sâm
@@ -1580,7 +1555,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Cao linh chi hộp gỗ
@@ -1593,7 +1568,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Kẹo sâm không đường
@@ -1606,7 +1581,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Sâm mật ong Hàn Quốc
@@ -1619,7 +1594,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Đông trùng hạ thảo dạng viên
@@ -1632,7 +1607,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Sâm tẩm mật ong nguyên củ
@@ -1748,7 +1723,7 @@
                       >
                     </div>
                   </div>
-                  <div class="col-md-5 p-0 ps-3 ps-md-0">
+                  <div class="col-md-5 p-0 ps-3">
                     <div
                       class="footer__mail d-flex align-items-center align-items-md-start align-items-lg-center"
                     >

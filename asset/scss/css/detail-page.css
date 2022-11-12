@@ -27,6 +27,7 @@
 }
 .call-back {
   padding: 0.2rem;
+  height: fit-content;
   background: linear-gradient(
     0deg,
     rgba(192, 142, 40, 1) 0%,

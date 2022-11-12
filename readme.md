@@ -2,10 +2,11 @@
 
 https://kgin.com.vn/
 
--npm i -g yarn -- tải node
--yarn -- tải libary từ node_modules về máy
---yarn sass -- build sccs sang css auto
---download extension html css support -- caption code
+- tải npm nếu chưa có
+- npm i -g yarn -- tải node
+- yarn -- tải libary từ node_modules về máy
+- yarn sass -- build sccs sang css auto
+- download extension html css support -- caption code
 
 # BEM
 
@@ -39,9 +40,4 @@ https://kgin.com.vn/
 - News-album(Long)
   https://kgin.com.vn/tin-tuc/album/cua-hang-2/
 - login + profile (HongThai)
-
-- Fix Header
-  - Log in
-  - Sign in
-- Profile
--
+- Fix all page(HongThai)

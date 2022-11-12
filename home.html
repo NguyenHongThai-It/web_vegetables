@@ -22,11 +22,12 @@
     />
 
     <!-- BOOTSTRAP -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-    />
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <!-- SLICK CAROUSEL -->
     <link
       rel="stylesheet"
@@ -57,7 +58,7 @@
       <!-- Header -->
       <section class="container header" id="header">
         <div
-          class="header-wrap d-flex align-items-md-start align-items-center justify-content-md-between justify-content-center flex-column flex-md-row"
+          class="header-wrap d-flex align-items-md-start align-items-center justify-content-md-between justify-content-center flex-column flex-lg-row"
         >
           <div class="header-left">
             <a href="./home.html" class="header-left__link">
@@ -68,7 +69,9 @@
               />
             </a>
           </div>
-          <div class="header-right d-flex flex-column mt-md-3 mt-0">
+          <div
+            class="header-right d-flex flex-md-column align-items-center align-items-md-stretch mt-md-3 mt-0"
+          >
             <div class="header-right-top">
               <ul class="header-right-list d-none d-md-flex gap-sm-1 p-0">
                 <li class="header-right__item">
@@ -99,6 +102,19 @@
                     Qui định & chính sách chung
                   </a>
                 </li>
+                <li class="header-right__item">
+                  <a href="./login.html" class="header-right__link fw-normal">
+                    Đăng nhập
+                  </a>
+                </li>
+                <li class="header-right__item">
+                  <a
+                    href="./register.html"
+                    class="header-right__link fw-normal"
+                  >
+                    Đăng kí
+                  </a>
+                </li>
               </ul>
             </div>
             <div class="header-right-center d-flex mb-2 mb-md-0">
@@ -114,6 +130,18 @@
             <div class="header-right__bottom d-none d-md-flex">
               Gợi ý từ khóa: Cao hồng sâm, Sâm tầm mật ong, Trà linh chi,...
             </div>
+            <a
+              href="profile.html"
+              class="header-right__user d-md-none d-inline-block pointer ms-3"
+            >
+              <i class="fa-solid fa-user fs-1 text-red_bold"></i>
+            </a>
+            <a
+              href="cart.html"
+              class="header-right__user d-md-none d-inline-block pointer ms-3"
+            >
+              <i class="fa-solid fa-cart-shopping fs-1 text-red_bold"></i>
+            </a>
           </div>
         </div>
       </section>
@@ -435,7 +463,7 @@
               Tất cả sản phẩm
             </div>
             <ul
-              class="navigate-list-mobile position-absolute"
+              class="navigate-list-mobile position-absolute scroll-custom"
               id="navigate-list-collapse__item"
             >
               <li
@@ -847,7 +875,7 @@
                       </h5>
                       <div class="card-text pt-2">
                         <div
-                          class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                          class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                         >
                           <p class="me-3" style="font-size: 3.8rem">-8%</p>
                           <div class="text-start">
@@ -868,12 +896,15 @@
                             <div
                               class="item-btn--textFeild"
                               style="padding: 0.2rem 1rem"
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
                             >
-                              <a
-                                href="./template-modal.html"
-                                class="media-fontsize-sm btn btn-light_1 d-flex"
+                              <span
+                                class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
                                 ><i class="fa-solid fa-paper-plane me-3"> </i
-                                >Xem nhanh</a
+                                >Xem nhanh</span
                               >
                             </div>
                           </div>
@@ -883,6 +914,10 @@
                             <div
                               class="item-btn--textFeild"
                               style="padding: 0.2rem 1rem"
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
                             >
                               <a
                                 href="./detail-product.html"
@@ -918,7 +953,7 @@
                       </h5>
                       <div class="card-text pt-2">
                         <div
-                          class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                          class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                         >
                           <p class="me-3" style="font-size: 3.8rem">-30%</p>
                           <div class="text-start">
@@ -939,12 +974,15 @@
                             <div
                               class="item-btn--textFeild"
                               style="padding: 0.2rem 1rem"
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
                             >
-                              <a
-                                href="./template-modal.html"
-                                class="media-fontsize-sm btn btn-light_1 d-flex"
+                              <span
+                                class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
                                 ><i class="fa-solid fa-paper-plane me-3"> </i
-                                >Xem nhanh</a
+                                >Xem nhanh</span
                               >
                             </div>
                           </div>
@@ -954,6 +992,10 @@
                             <div
                               class="item-btn--textFeild"
                               style="padding: 0.2rem 1rem"
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
                             >
                               <a
                                 href="./detail-product.html"
@@ -989,7 +1031,7 @@
                       </h5>
                       <div class="card-text pt-2">
                         <div
-                          class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                          class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                         >
                           <p class="me-3" style="font-size: 3.8rem">-19%</p>
                           <div class="text-start">
@@ -1010,12 +1052,15 @@
                             <div
                               class="item-btn--textFeild"
                               style="padding: 0.2rem 1rem"
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
                             >
-                              <a
-                                href="./template-modal.html"
-                                class="media-fontsize-sm btn btn-light_1 d-flex"
+                              <span
+                                class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
                                 ><i class="fa-solid fa-paper-plane me-3"> </i
-                                >Xem nhanh</a
+                                >Xem nhanh</span
                               >
                             </div>
                           </div>
@@ -1025,6 +1070,10 @@
                             <div
                               class="item-btn--textFeild"
                               style="padding: 0.2rem 1rem"
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
                             >
                               <a
                                 href="./detail-product.html"
@@ -1060,7 +1109,7 @@
                       </h5>
                       <div class="card-text pt-2">
                         <div
-                          class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                          class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                         >
                           <p class="me-3" style="font-size: 3.8rem">-12%</p>
                           <div class="text-start">
@@ -1081,12 +1130,15 @@
                             <div
                               class="item-btn--textFeild"
                               style="padding: 0.2rem 1rem"
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
                             >
-                              <a
-                                href="./template-modal.html"
-                                class="media-fontsize-sm btn btn-light_1 d-flex"
+                              <span
+                                class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
                                 ><i class="fa-solid fa-paper-plane me-3"> </i
-                                >Xem nhanh</a
+                                >Xem nhanh</span
                               >
                             </div>
                           </div>
@@ -1096,6 +1148,10 @@
                             <div
                               class="item-btn--textFeild"
                               style="padding: 0.2rem 1rem"
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
                             >
                               <a
                                 href="./detail-product.html"
@@ -1227,7 +1283,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -1251,12 +1307,11 @@
                                   class="item-btn--textFeild"
                                   style="padding: 0.2rem 1rem"
                                 >
-                                  <a
-                                    href="./template-modal.html"
-                                    class="media-fontsize-sm btn btn-light_1 d-flex"
+                                  <span
+                                    class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
                                     ><i class="fa-solid fa-paper-plane me-3">
                                     </i
-                                    >Xem nhanh</a
+                                    >Xem nhanh</span
                                   >
                                 </div>
                               </div>
@@ -1301,7 +1356,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-20%</p>
                               <div class="text-start">
@@ -1325,12 +1380,11 @@
                                   class="item-btn--textFeild"
                                   style="padding: 0.2rem 1rem"
                                 >
-                                  <a
-                                    href="./template-modal.html"
-                                    class="media-fontsize-sm btn btn-light_1 d-flex"
+                                  <span
+                                    class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
                                     ><i class="fa-solid fa-paper-plane me-3">
                                     </i
-                                    >Xem nhanh</a
+                                    >Xem nhanh</span
                                   >
                                 </div>
                               </div>
@@ -1375,7 +1429,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-10%</p>
                               <div class="text-start">
@@ -1399,12 +1453,11 @@
                                   class="item-btn--textFeild"
                                   style="padding: 0.2rem 1rem"
                                 >
-                                  <a
-                                    href="./template-modal.html"
-                                    class="media-fontsize-sm btn btn-light_1 d-flex"
+                                  <span
+                                    class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
                                     ><i class="fa-solid fa-paper-plane me-3">
                                     </i
-                                    >Xem nhanh</a
+                                    >Xem nhanh</span
                                   >
                                 </div>
                               </div>
@@ -1507,7 +1560,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-24%</p>
                               <div class="text-start">
@@ -1529,12 +1582,11 @@
                                   class="item-btn--textFeild"
                                   style="padding: 0.2rem 1rem"
                                 >
-                                  <a
-                                    href="./template-modal.html"
-                                    class="media-fontsize-sm btn btn-light_1 d-flex"
+                                  <span
+                                    class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
                                     ><i class="fa-solid fa-paper-plane me-3">
                                     </i
-                                    >Xem nhanh</a
+                                    >Xem nhanh</span
                                   >
                                 </div>
                               </div>
@@ -1581,7 +1633,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-19%</p>
                               <div class="text-start">
@@ -1605,12 +1657,11 @@
                                   class="item-btn--textFeild"
                                   style="padding: 0.2rem 1rem"
                                 >
-                                  <a
-                                    href="./template-modal.html"
-                                    class="media-fontsize-sm btn btn-light_1 d-flex"
+                                  <span
+                                    class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
                                     ><i class="fa-solid fa-paper-plane me-3">
                                     </i
-                                    >Xem nhanh</a
+                                    >Xem nhanh</span
                                   >
                                 </div>
                               </div>
@@ -1655,7 +1706,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-10%</p>
                               <div class="text-start">
@@ -1787,7 +1838,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-14%</p>
                               <div class="text-start">
@@ -1865,7 +1916,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-8%</p>
                               <div class="text-start">
@@ -1889,12 +1940,11 @@
                                   class="item-btn--textFeild"
                                   style="padding: 0.2rem 1rem"
                                 >
-                                  <a
-                                    href="./template-modal.html"
-                                    class="media-fontsize-sm btn btn-light_1 d-flex"
+                                  <span
+                                    class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
                                     ><i class="fa-solid fa-paper-plane me-3">
                                     </i
-                                    >Xem nhanh</a
+                                    >Xem nhanh</span
                                   >
                                 </div>
                               </div>
@@ -1939,7 +1989,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-10%</p>
                               <div class="text-start">
@@ -1963,12 +2013,11 @@
                                   class="item-btn--textFeild"
                                   style="padding: 0.2rem 1rem"
                                 >
-                                  <a
-                                    href="./template-modal.html"
-                                    class="media-fontsize-sm btn btn-light_1 d-flex"
+                                  <span
+                                    class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
                                     ><i class="fa-solid fa-paper-plane me-3">
                                     </i
-                                    >Xem nhanh</a
+                                    >Xem nhanh</span
                                   >
                                 </div>
                               </div>
@@ -2073,7 +2122,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-17%</p>
                               <div class="text-start">
@@ -2097,12 +2146,11 @@
                                   class="item-btn--textFeild"
                                   style="padding: 0.2rem 1rem"
                                 >
-                                  <a
-                                    href="./template-modal.html"
-                                    class="media-fontsize-sm btn btn-light_1 d-flex"
+                                  <span
+                                    class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
                                     ><i class="fa-solid fa-paper-plane me-3">
                                     </i
-                                    >Xem nhanh</a
+                                    >Xem nhanh</span
                                   >
                                 </div>
                               </div>
@@ -2147,7 +2195,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-12%</p>
                               <div class="text-start">
@@ -2171,12 +2219,11 @@
                                   class="item-btn--textFeild"
                                   style="padding: 0.2rem 1rem"
                                 >
-                                  <a
-                                    href="./template-modal.html"
-                                    class="media-fontsize-sm btn btn-light_1 d-flex"
+                                  <span
+                                    class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
                                     ><i class="fa-solid fa-paper-plane me-3">
                                     </i
-                                    >Xem nhanh</a
+                                    >Xem nhanh</span
                                   >
                                 </div>
                               </div>
@@ -2221,7 +2268,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-27%</p>
                               <div class="text-start">
@@ -2243,12 +2290,11 @@
                                   class="item-btn--textFeild"
                                   style="padding: 0.2rem 1rem"
                                 >
-                                  <a
-                                    href="./template-modal.html"
-                                    class="media-fontsize-sm btn btn-light_1 d-flex"
+                                  <span
+                                    class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
                                     ><i class="fa-solid fa-paper-plane me-3">
                                     </i
-                                    >Xem nhanh</a
+                                    >Xem nhanh</span
                                   >
                                 </div>
                               </div>
@@ -2460,7 +2506,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-10%</p>
                               <div class="text-start">
@@ -2484,12 +2530,11 @@
                                   class="item-btn--textFeild"
                                   style="padding: 0.2rem 1rem"
                                 >
-                                  <a
-                                    href="./template-modal.html"
-                                    class="media-fontsize-sm btn btn-light_1 d-flex"
+                                  <span
+                                    class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
                                     ><i class="fa-solid fa-paper-plane me-3">
                                     </i
-                                    >Xem nhanh</a
+                                    >Xem nhanh</span
                                   >
                                 </div>
                               </div>
@@ -2534,7 +2579,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-10%</p>
                               <div class="text-start">
@@ -2558,12 +2603,11 @@
                                   class="item-btn--textFeild"
                                   style="padding: 0.2rem 1rem"
                                 >
-                                  <a
-                                    href="./template-modal.html"
-                                    class="media-fontsize-sm btn btn-light_1 d-flex"
+                                  <span
+                                    class="media-fontsize-sm btn btn-light_1 d-flex align-items-center justify-content-center"
                                     ><i class="fa-solid fa-paper-plane me-3">
                                     </i
-                                    >Xem nhanh</a
+                                    >Xem nhanh</span
                                   >
                                 </div>
                               </div>
@@ -2608,7 +2652,7 @@
                           </h5>
                           <div class="card-text pt-2">
                             <div
-                              class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                              class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                             >
                               <p class="me-3" style="font-size: 3.8rem">-8%</p>
                               <div class="text-start">
@@ -2703,15 +2747,14 @@
                   </div>
 
                   <div
-                    class="col-md-6 text-start mt-5 pe-3 lh-lg"
+                    class="col-md-6 text-start mt-5 pe-3 lh-lg scroll-custom"
                     style="height: 45rem; overflow: auto"
                   >
                     <div class="introduce-1">
-                      <h1 class="fw-bold text-danger">Nhân Sâm Hàn Quốc</h1>
+                      <h1 class="fw-bold text-red_1">Nhân Sâm Hàn Quốc</h1>
                       <p>
                         Cửa hàng K-GIN chuyên phân phối các loại
-                        <span class="fw-bold text-danger"
-                          >nhân sâm Hàn Quốc</span
+                        <span class="fw-bold text-red_1">nhân sâm Hàn Quốc</span
                         >, hồng sâm 6 năm tuổi, nấm linh chi và đông trùng hạ
                         thảo uy tín, giá tốt nhất thị trường.
                       </p>
@@ -2745,11 +2788,11 @@
                     </div>
 
                     <div class="introduce-2 mt-5">
-                      <h1 class="fw-bold text-danger">
+                      <h1 class="fw-bold text-red_1">
                         Nhân sâm Hàn Quốc là gì
                       </h1>
                       <p>
-                        <span class="fw-bold text-danger"
+                        <span class="fw-bold text-red_1"
                           >Nhân sâm Hàn Quốc</span
                         >
                         là tên gọi một số cây thân thảo có rễ và củ được dùng
@@ -2774,7 +2817,7 @@
                         </h2>
                         <p>
                           Theo như các nghiên cứu của y học hiện đại,
-                          <span class="fw-bold text-danger">nhân sâm</span> có
+                          <span class="fw-bold text-red_1">nhân sâm</span> có
                           các thành phần chính như
                           <b
                             >Ginsenoside (Saponin trong nhân sâm còn có tên gọi
@@ -2851,7 +2894,7 @@
                           2. Nhân sâm Hàn Quốc có tác dụng gì?
                         </h2>
                         <p>
-                          <span class="fw-bold text-danger"
+                          <span class="fw-bold text-red_1"
                             >Nhân sâm Hàn Quốc có tác dụng gì?</span
                           >
                           Và hiệu quả mang lại đối với cơ thể, sức khỏe như thế
@@ -2971,7 +3014,7 @@
                     </div>
 
                     <div class="introduce-3 mt-5">
-                      <h1 class="fw-bold text-danger">
+                      <h1 class="fw-bold text-red_1">
                         Các loại sâm Hàn Quốc tốt nhất hiện nay
                       </h1>
                       <p>
@@ -3005,7 +3048,7 @@
                       <div class="introduce-3-2 mt-4">
                         <h2 class="fw-bold">2. Hồng sâm</h2>
                         <p>
-                          <span class="fw-bold text-danger"
+                          <span class="fw-bold text-red_1"
                             >Hồng sâm Hàn Quốc</span
                           >
                           là những củ nhân sâm 6 năm tuổi được chọn lựa kỹ càng
@@ -3035,7 +3078,7 @@
                         <h2 class="fw-bold">3. Hắc sâm</h2>
                         <p>
                           So với nhân sâm và hồng sâm,
-                          <span class="fw-bold text-danger">hắc sâm</span> còn
+                          <span class="fw-bold text-red_1">hắc sâm</span> còn
                           khá mới mẻ trên thị trường, tuy nhiên hàm lượng chất
                           dinh dưỡng của hắc sâm lại vượt trội hơn cả. Hắc sâm
                           được chọn lựa từ những củ sâm to, tươi và đảm bảo chất
@@ -3118,13 +3161,13 @@
                     </div>
 
                     <div class="introduce-5 mt-5">
-                      <h1 class="fw-bold text-danger">
+                      <h1 class="fw-bold text-red_1">
                         Giá các sản phẩm từ nhân sâm tốt nhất hiện nay
                       </h1>
                       <p>
                         Trên thị trường hiện nay, có rất nhiều sản phẩm chế biến
                         từ nhân sâm, rất đa dạng và phong phú và
-                        <span class="fw-bold text-danger"
+                        <span class="fw-bold text-red_1"
                           >sâm hàn quốc giá bao nhiêu</span
                         >
                         đang là câu hỏi thắc mắc của nhiều khách hàng. Tại cửa
@@ -3150,7 +3193,7 @@
                           thuộc vào chất lượng sâm. Nếu củ sâm càng lớn, chất
                           lượng tốt, tỷ lệ khuyết tật ít thì giá thành càng cao.
                           Phổ biến nhất là
-                          <span class="fw-bold text-danger"
+                          <span class="fw-bold text-red_1"
                             >sâm khô hộp thiếc 300gr</span
                           >.
                         </p>
@@ -3240,11 +3283,13 @@
                       <h3 class="shop-system__title fw-bold mt-4">
                         Cửa Hàng 51 Võ Thị Sáu
                       </h3>
-                      <p class="shop-system__desc mt-3">
+                      <p class="shop-system__desc mt-3 limit-line-text">
                         <i
                           class="text-golden fa-sharp fa-solid fa-location-dot"
                         ></i>
-                        <span> 51 Võ Thị Sáu - Phường 6 - Quận 3 - TP.HCM</span>
+                        <span class="">
+                          51 Võ Thị Sáu - Phường 6 - Quận 3 - TP.HCM</span
+                        >
                       </p>
                       <p class="shop-system__desc mt-2">
                         <i class="text-golden fa-solid fa-phone"></i>
@@ -3293,11 +3338,11 @@
                       <h3 class="shop-system__title fw-bold mt-4">
                         Cửa Hàng 577 Nguyễn Trãi
                       </h3>
-                      <p class="shop-system__desc mt-3">
+                      <p class="shop-system__desc mt-3 limit-line-text">
                         <i
                           class="text-golden fa-sharp fa-solid fa-location-dot"
                         ></i>
-                        <span
+                        <span class=""
                           >577 Nguyễn Trãi - Thanh Xuân Nam - Thanh Xuân - Hà
                           Nội ( Đối diện Pico Trung Văn)</span
                         >
@@ -3347,11 +3392,11 @@
                       <h3 class="shop-system__title fw-bold mt-4">
                         Cửa Hàng 149 Cầu giấy
                       </h3>
-                      <p class="shop-system__desc mt-3">
+                      <p class="shop-system__desc mt-3 limit-line-text">
                         <i
                           class="text-golden fa-sharp fa-solid fa-location-dot"
                         ></i>
-                        <span>
+                        <span class="">
                           149 Cầu Giấy - Quan Hoa - Cầu Giấy - Hà Nội</span
                         >
                       </p>
@@ -3400,11 +3445,13 @@
                       <h3 class="shop-system__title fw-bold mt-4">
                         Cửa Hàng 51 Võ Thị Sáu
                       </h3>
-                      <p class="shop-system__desc mt-3">
+                      <p class="shop-system__desc mt-3 limit-line-text">
                         <i
                           class="text-golden fa-sharp fa-solid fa-location-dot"
                         ></i>
-                        <span> 21 Tây Sơn - Quan Trung- Đống Đa - Hà Nội</span>
+                        <span class="">
+                          21 Tây Sơn - Quan Trung- Đống Đa - Hà Nội</span
+                        >
                       </p>
                       <p class="shop-system__desc mt-2">
                         <i class="text-golden fa-solid fa-phone"></i>
@@ -3643,7 +3690,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Nước Đông Trùng Hạ Thảo
@@ -3656,7 +3703,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Hồng Sâm Linh Chi Hàn Quốc
@@ -3669,7 +3716,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Hắc sâm
@@ -3682,7 +3729,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Cao linh chi hộp gỗ
@@ -3695,7 +3742,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Kẹo sâm không đường
@@ -3708,7 +3755,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Sâm mật ong Hàn Quốc
@@ -3721,7 +3768,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Đông trùng hạ thảo dạng viên
@@ -3734,7 +3781,7 @@
                         style="height: 3.5rem; width: 3.5rem"
                       />
                       <a
-                        href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                        href="./product.html"
                         class="text-decoration-none text-white"
                       >
                         Sâm tẩm mật ong nguyên củ
@@ -3905,18 +3952,387 @@
         </div>
         <div class="footer-end">Copyright 2021 thuộc về KGIN</div>
       </section>
+      <div
+        class="modal modal-lg fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered"
+          style="max-width: 100rem"
+        >
+          <div class="modal-content p-5 text-bg-leather fs-5 position-relative">
+            <div class="d-lg-flex align-items-start">
+              <div class="modal-header col-lg-5 col-12">
+                <img
+                  src="/asset/img/home/cao-hoang-de-kgin-dai-dien.jpg"
+                  alt=""
+                  style="
+                    max-width: 50rem;
+                    object-fit: contain;
+                    height: fit-content;
+                  "
+                />
+              </div>
+              <div class="modal-body col-lg-7 col-12">
+                <h2 class="fs-1">
+                  Đông Trùng Hạ Thảo Dạng Nước Hộp Gỗ Đen 60 Gói
+                </h2>
+                <div
+                  class="d-flex align-items-center justify-content-between justify-content-lg-start gap-5"
+                >
+                  <div class="d-flex align-items-center gap-1">
+                    <span>4.8</span>
+                    <i class="fa-solid fa-star text-orange_light"></i>
+                    <i class="fa-solid fa-star text-orange_light"></i>
+                    <i class="fa-solid fa-star text-orange_light"></i>
+                    <i class="fa-solid fa-star text-orange_light"></i>
+                    <i class="fa-solid fa-star text-orange_light"></i>
+                  </div>
+
+                  <span class="text-red_dark fw-bold">1.6k đã bán</span>
+                </div>
+                <p>
+                  Đông trùng hạ thảo dạng nước hộp gỗ đen 60 gói, vị đắng nhẹ.
+                  Khi uống cho cảm giác hơi thanh ở đầu lưỡi, thơm mùi đông
+                  trùng. Sản phẩm đông trùng được đóng gói hộp gỗ vô cùng sang
+                  trọng và lịch sự là quà tặng ý nghĩa đến người thân và gia
+                  đình.
+                </p>
+
+                <div>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-column gap-2">
+                      <div
+                        class="d-flex align-items-center justify-content-between justify-content-lg-start"
+                      >
+                        <span class="fw-bold" style="width: 12.5rem"
+                          >Quy cách</span
+                        >
+
+                        <span class=""><strong>:</strong> 60 gói x 30ml</span>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between justify-content-lg-start"
+                      >
+                        <span class="fw-bold" style="width: 12.5rem"
+                          >Xuất xứ</span
+                        >
+
+                        <span class=""><strong>:</strong> Hàn Quốc</span>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between justify-content-lg-start"
+                      >
+                        <span class="fw-bold" style="width: 12.5rem"
+                          >Thương hiệu</span
+                        >
+
+                        <span class=""
+                          ><strong>:</strong> Daedong Korea Ginseng</span
+                        >
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between justify-content-lg-start"
+                      >
+                        <span class="fw-bold" style="width: 12.5rem"
+                          >Giá thị trường</span
+                        >
+
+                        <span
+                          ><strong>:</strong>
+                          <span
+                            class="text-decoration-line-through text-gray_2"
+                          >
+                            1.850.000 đ
+                          </span></span
+                        >
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between justify-content-lg-start"
+                      >
+                        <span class="fw-bold" style="width: 12.5rem"
+                          >Giá khuyến mã</span
+                        >
+
+                        <span
+                          ><strong>:</strong>
+                          <span class="text-red_dark fs-1 fw-semibold"
+                            >1.500.000 đ</span
+                          ></span
+                        >
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between justify-content-lg-start mt-3"
+                      >
+                        <span class="fw-bold" style="width: 12.5rem"
+                          >Số lượng</span
+                        >
+
+                        <div class="d-flex align-items-center">
+                          <strong>:</strong>
+                          <div
+                            class="item-label--goldenBackground kgin-sharp d-flex align-items-center sl-sp"
+                          >
+                            <span
+                              class="input-number-decrement kgin-sharp-no-right"
+                            >
+                              <i class="fa-solid fa-minus"></i>
+                            </span>
+                            <input
+                              type="number"
+                              name="quantity"
+                              id="quantity"
+                              style="outline: none"
+                            />
+                            <span
+                              class="input-number-increment kgin-sharp-no-left"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="call-back d-none d-md-block">
+                      <div
+                        class="px-3 py-2 d-flex text-bg-leather p-1 border-bottom border-orange_bold align-items-center gap-2"
+                      >
+                        <div
+                          class="rounded-circle call-back"
+                          style="
+                            width: 3.6rem;
+                            height: 3.6rem;
+                            padding: 0.12rem;
+                          "
+                        >
+                          <div
+                            class="text-bg-leather d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 3.4rem; height: 3.4rem"
+                          >
+                            <i
+                              class="fa-regular fa-thumbs-up text-red_dark"
+                            ></i>
+                          </div>
+                        </div>
+                        <div>Cam kết hàng chính hãng 100%</div>
+                      </div>
+                      <div
+                        class="px-3 py-2 d-flex text-bg-leather p-1 border-bottom border-orange_bold align-items-center gap-2"
+                      >
+                        <div
+                          class="rounded-circle call-back"
+                          style="
+                            width: 3.6rem;
+                            height: 3.6rem;
+                            padding: 0.12rem;
+                          "
+                        >
+                          <div
+                            class="text-bg-leather d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 3.4rem; height: 3.4rem"
+                          >
+                            <i
+                              class="fa-regular fa-thumbs-up text-red_dark"
+                            ></i>
+                          </div>
+                        </div>
+                        <div>Cam kết hàng chính hãng 100%</div>
+                      </div>
+                      <div
+                        class="px-3 py-2 d-flex text-bg-leather p-1 border-bottom border-orange_bold align-items-center gap-2"
+                      >
+                        <div
+                          class="rounded-circle call-back"
+                          style="
+                            width: 3.6rem;
+                            height: 3.6rem;
+                            padding: 0.12rem;
+                          "
+                        >
+                          <div
+                            class="text-bg-leather d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 3.4rem; height: 3.4rem"
+                          >
+                            <i
+                              class="fa-regular fa-thumbs-up text-red_dark"
+                            ></i>
+                          </div>
+                        </div>
+                        <div>Cam kết hàng chính hãng 100%</div>
+                      </div>
+                      <div
+                        class="px-3 py-2 d-flex text-bg-leather p-1 border-bottom border-orange_bold align-items-center gap-2"
+                      >
+                        <div
+                          class="rounded-circle call-back"
+                          style="
+                            width: 3.6rem;
+                            height: 3.6rem;
+                            padding: 0.12rem;
+                          "
+                        >
+                          <div
+                            class="text-bg-leather d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 3.4rem; height: 3.4rem"
+                          >
+                            <i
+                              class="fa-regular fa-thumbs-up text-red_dark"
+                            ></i>
+                          </div>
+                        </div>
+                        <div>Cam kết hàng chính hãng 100%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div
+                      class="item-label--goldenBackground item-label--clipPath p-1 mt-4 m-auto text-center col-12 col-lg-6"
+                    >
+                      <div
+                        class="item-label--redTextFeild item-label--clipPath label-Advertise"
+                        style="padding: 0.4rem"
+                      >
+                        <span class="fs-2 label-Advertise fw-bold"
+                          >Sản Phẩm Bán Chạy</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="mt-5 mt-lg-4 position-relative col-12 col-lg-6 px-lg-2 px-0"
+                    >
+                      <div
+                        class="item-label--goldenBackground kgin-sharp"
+                        style="padding: 0.3rem"
+                      >
+                        <input
+                          type="text"
+                          class="w-100 border-0 ps-4 text-red_dark"
+                          placeholder="Yêu cầu gọi lại"
+                          style="height: 4.4rem; outline-style: none"
+                        />
+                      </div>
+                      <div
+                        class="position-absolute call-back top-0 end-0 p-1 pointer-event"
+                      >
+                        <button
+                          class="border-0 text-bg-red_dark text-orange_light fw-semibold d-flex align-items-center justify-content-center fs-2"
+                          style="width: 6rem; height: 4.4rem"
+                        >
+                          Gửi
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="call-back mt-5 d-block d-md-none">
+                    <div
+                      class="px-3 py-2 d-flex text-bg-leather p-1 border-bottom border-orange_bold align-items-center gap-2"
+                    >
+                      <div
+                        class="rounded-circle call-back"
+                        style="width: 3.6rem; height: 3.6rem; padding: 0.12rem"
+                      >
+                        <div
+                          class="text-bg-leather d-flex align-items-center justify-content-center rounded-circle"
+                          style="width: 3.4rem; height: 3.4rem"
+                        >
+                          <i class="fa-regular fa-thumbs-up text-red_dark"></i>
+                        </div>
+                      </div>
+                      <div>Cam kết hàng chính hãng 100%</div>
+                    </div>
+                    <div
+                      class="px-3 py-2 d-flex text-bg-leather p-1 border-bottom border-orange_bold align-items-center gap-2"
+                    >
+                      <div
+                        class="rounded-circle call-back"
+                        style="width: 3.6rem; height: 3.6rem; padding: 0.12rem"
+                      >
+                        <div
+                          class="text-bg-leather d-flex align-items-center justify-content-center rounded-circle"
+                          style="width: 3.4rem; height: 3.4rem"
+                        >
+                          <i class="fa-regular fa-thumbs-up text-red_dark"></i>
+                        </div>
+                      </div>
+                      <div>Cam kết hàng chính hãng 100%</div>
+                    </div>
+                    <div
+                      class="px-3 py-2 d-flex text-bg-leather p-1 border-bottom border-orange_bold align-items-center gap-2"
+                    >
+                      <div
+                        class="rounded-circle call-back"
+                        style="width: 3.6rem; height: 3.6rem; padding: 0.12rem"
+                      >
+                        <div
+                          class="text-bg-leather d-flex align-items-center justify-content-center rounded-circle"
+                          style="width: 3.4rem; height: 3.4rem"
+                        >
+                          <i class="fa-regular fa-thumbs-up text-red_dark"></i>
+                        </div>
+                      </div>
+                      <div>Cam kết hàng chính hãng 100%</div>
+                    </div>
+                    <div
+                      class="px-3 py-2 d-flex text-bg-leather p-1 border-bottom border-orange_bold align-items-center gap-2"
+                    >
+                      <div
+                        class="rounded-circle call-back"
+                        style="width: 3.6rem; height: 3.6rem; padding: 0.12rem"
+                      >
+                        <div
+                          class="text-bg-leather d-flex align-items-center justify-content-center rounded-circle"
+                          style="width: 3.4rem; height: 3.4rem"
+                        >
+                          <i class="fa-regular fa-thumbs-up text-red_dark"></i>
+                        </div>
+                      </div>
+                      <div>Cam kết hàng chính hãng 100%</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-around row mt-5">
+                  <div
+                    class="border rounded-circle border-red_dark d-flex align-items-center justify-content-center col-3"
+                    style="width: 5rem; height: 5rem"
+                  >
+                    <i class="fa-solid fa-van-shuttle text-red_dark fs-3"></i>
+                  </div>
+                  <div class="col-9">
+                    <p>
+                      Sản phẩm được giao và thu tiền tận nơi trong vòng 4h trong
+                      nội thành Hà Nội và TP.HCM.
+                    </p>
+                    <p class="mt-3">
+                      Với đơn hàng ở tỉnh còn phụ thuộc vào khoảng cách địa lý,
+                      Chúng tôi luôn ưu tiên giao hàng nhanh nhất có thể.
+                    </p>
+                    <p class="mt-3">
+                      Các trường hợp cần giao gấp hãy liên hệ trực tiếp
+                      <strong>19004625</strong> để được giao hàng ngay.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="position-absolute"
+              style="cursor: pointer; top: -1rem; right: -1rem"
+              data-bs-dismiss="modal"
+            >
+              <i class="fa-regular fa-circle-xmark fs-1 text-red_dark"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 
   <!-- JQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-  <!-- BOOTSTRAP -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-  ></script>
 
   <!-- SLICK CAROUSEL -->
   <script

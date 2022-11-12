@@ -1,5 +1,8 @@
 /* Navigate Menu */
-
+.fix-size {
+  max-height: 14rem !important;
+  overflow: hidden;
+}
 .navigation-menu__item {
   box-shadow: 0 0 0 -0.3rem rgb(0 0 0 / 12%);
   border-bottom: 0.2rem solid rgba(70, 15, 15, 40%);
@@ -31,6 +34,8 @@
 .carousel-for__item img {
   border-radius: 1rem;
   position: relative;
+  max-height: 40rem;
+  object-fit: fill;
 }
 
 .carousel-nav__item {
@@ -53,6 +58,7 @@
 
 .transform-scale-bigImg img {
   transition: 0.3s;
+  max-height: 20.6rem;
 }
 
 .transform-scale-bigImg:hover img {

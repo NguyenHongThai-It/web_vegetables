@@ -127,15 +127,15 @@ td {
     rgba(247, 236, 158, 1) 100%
   );
 }
-::-webkit-scrollbar {
+.scroll-custom::-webkit-scrollbar {
   width: 0.5rem;
 }
 
-::-webkit-scrollbar-thumb {
+.scroll-custom::-webkit-scrollbar-thumb {
   background-color: #bf1e2e;
 }
 
-::-webkit-scrollbar-track {
+.scroll-custom::-webkit-scrollbar-track {
   background: linear-gradient(
     0deg,
     rgba(192, 142, 40, 1) 0%,
@@ -145,7 +145,7 @@ td {
   );
 }
 
-::-webkit-scrollbar-thumb:hover {
+.scroll-custom::-webkit-scrollbar-thumb:hover {
   background-color: #3c0006;
 }
 
@@ -155,4 +155,27 @@ td {
 
 .shop-system__desc {
   font-size: 1.5rem;
+}
+
+.limit-line-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;
+  max-height: 32px;
+  -webkit-line-clamp: 1; /* Write the number of 
+                              lines you want to be 
+                              displayed */
+  -webkit-box-orient: vertical;
+}
+.item__tittle--hover > b {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;
+  max-height: 32px;
+  -webkit-line-clamp: 1; /* Write the number of 
+                              lines you want to be 
+                              displayed */
+  -webkit-box-orient: vertical;
 }

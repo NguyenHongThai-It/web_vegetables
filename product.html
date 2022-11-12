@@ -13,18 +13,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- BOOTSTRAP -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <!-- FONT - roboto-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
-    />
-
-    <!-- BOOTSTRAP -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
     />
 
     <!-- SLICK CAROUSEL -->
@@ -57,7 +58,7 @@
       <!-- Header -->
       <section class="container header" id="header">
         <div
-          class="header-wrap d-flex align-items-md-start align-items-center justify-content-md-between justify-content-center flex-column flex-md-row"
+          class="header-wrap d-flex align-items-md-start align-items-center justify-content-md-between justify-content-center flex-column flex-lg-row"
         >
           <div class="header-left">
             <a href="./home.html" class="header-left__link">
@@ -68,8 +69,9 @@
               />
             </a>
           </div>
-
-          <div class="header-right d-flex flex-column mt-md-3 mt-0">
+          <div
+            class="header-right d-flex flex-md-column align-items-center align-items-md-stretch mt-md-3 mt-0"
+          >
             <div class="header-right-top">
               <ul class="header-right-list d-none d-md-flex gap-sm-1 p-0">
                 <li class="header-right__item">
@@ -100,6 +102,19 @@
                     Qui định & chính sách chung
                   </a>
                 </li>
+                <li class="header-right__item">
+                  <a href="./login.html" class="header-right__link fw-normal">
+                    Đăng nhập
+                  </a>
+                </li>
+                <li class="header-right__item">
+                  <a
+                    href="./register.html"
+                    class="header-right__link fw-normal"
+                  >
+                    Đăng kí
+                  </a>
+                </li>
               </ul>
             </div>
             <div class="header-right-center d-flex mb-2 mb-md-0">
@@ -115,6 +130,18 @@
             <div class="header-right__bottom d-none d-md-flex">
               Gợi ý từ khóa: Cao hồng sâm, Sâm tầm mật ong, Trà linh chi,...
             </div>
+            <a
+              href="profile.html"
+              class="header-right__user d-md-none d-inline-block pointer ms-3"
+            >
+              <i class="fa-solid fa-user fs-1 text-red_bold"></i>
+            </a>
+            <a
+              href="cart.html"
+              class="header-right__user d-md-none d-inline-block pointer ms-3"
+            >
+              <i class="fa-solid fa-cart-shopping fs-1 text-red_bold"></i>
+            </a>
           </div>
         </div>
       </section>
@@ -238,7 +265,7 @@
                     </a>
                   </li>
                   <li class="navigate-sublist__item">
-                    <a href=./product.html" class="navigate-sublist__link">
+                    <a href="./product.html" class="navigate-sublist__link">
                       Tinh dầu thông đỏ
                     </a>
                   </li>
@@ -377,12 +404,16 @@
                 </a>
               </li>
               <li class="navigate-sublist__item">
-                <a href="./product.html" class="navigate-sublist__link"> Sản phẩm khác </a>
+                <a href="./product.html" class="navigate-sublist__link">
+                  Sản phẩm khác
+                </a>
               </li>
             </ol>
           </li>
           <li class="navigate-list__item">
-            <a href="./product.html" class="navigate-list__link"> Hệ thống cửa hàng </a>
+            <a href="./product.html" class="navigate-list__link">
+              Hệ thống cửa hàng
+            </a>
           </li>
           <li class="navigate-list__item">
             <a href="./product.html" class="navigate-list__link">
@@ -719,8 +750,6 @@
             </ul>
           </ul>
         </div>
-
-        
       </section>
 
       <!-- Container -->
@@ -1185,7 +1214,7 @@
                     </div>
 
                     <div
-                      class="item_sellPrice pb-2 pt-3 ps-3 ps-md-0 ps-lg-3 text-danger fw-bold d-flex align-items-end justify-content-around justify-content-md-between justify-content-lg-start lh-1 border-bottom"
+                      class="item_sellPrice pb-2 pt-3 ps-3 ps-md-0 ps-lg-3 text-red_1 fw-bold d-flex align-items-end justify-content-around justify-content-md-between justify-content-lg-start lh-1 border-bottom"
                     >
                       <p
                         class="me-5 ms-5 ms-lg-0 ps-md-4"
@@ -1292,7 +1321,7 @@
                     </div>
 
                     <div
-                      class="item_sellPrice pb-2 pt-3 ps-3 ps-md-0 ps-lg-3 text-danger fw-bold d-flex align-items-end justify-content-around justify-content-md-between justify-content-lg-start lh-1 border-bottom"
+                      class="item_sellPrice pb-2 pt-3 ps-3 ps-md-0 ps-lg-3 text-red_1 fw-bold d-flex align-items-end justify-content-around justify-content-md-between justify-content-lg-start lh-1 border-bottom"
                     >
                       <p
                         class="me-5 ms-5 ms-lg-0 ps-md-4"
@@ -1399,7 +1428,7 @@
                     </div>
 
                     <div
-                      class="item_sellPrice pb-2 pt-3 ps-3 ps-md-0 ps-lg-3 text-danger fw-bold d-flex align-items-end justify-content-around justify-content-md-between justify-content-lg-start lh-1 border-bottom"
+                      class="item_sellPrice pb-2 pt-3 ps-3 ps-md-0 ps-lg-3 text-red_1 fw-bold d-flex align-items-end justify-content-around justify-content-md-between justify-content-lg-start lh-1 border-bottom"
                     >
                       <p
                         class="me-5 ms-5 ms-lg-0 ps-md-4"
@@ -1506,7 +1535,7 @@
                     </div>
 
                     <div
-                      class="item_sellPrice pb-2 pt-3 ps-3 ps-md-0 ps-lg-3 text-danger fw-bold d-flex align-items-end justify-content-around justify-content-md-between justify-content-lg-start lh-1 border-bottom"
+                      class="item_sellPrice pb-2 pt-3 ps-3 ps-md-0 ps-lg-3 text-red_1 fw-bold d-flex align-items-end justify-content-around justify-content-md-between justify-content-lg-start lh-1 border-bottom"
                     >
                       <p
                         class="me-5 ms-5 ms-lg-0 ps-md-4"
@@ -1613,7 +1642,7 @@
                     </div>
 
                     <div
-                      class="item_sellPrice pb-2 pt-3 ps-3 ps-md-0 ps-lg-3 text-danger fw-bold d-flex align-items-end justify-content-around justify-content-md-between justify-content-lg-start lh-1 border-bottom"
+                      class="item_sellPrice pb-2 pt-3 ps-3 ps-md-0 ps-lg-3 text-red_1 fw-bold d-flex align-items-end justify-content-around justify-content-md-between justify-content-lg-start lh-1 border-bottom"
                     >
                       <p
                         class="me-5 ms-5 ms-lg-0 ps-md-4"
@@ -1720,7 +1749,7 @@
                     </div>
 
                     <div
-                      class="item_sellPrice pb-2 pt-3 ps-3 ps-md-0 ps-lg-3 text-danger fw-bold d-flex align-items-end justify-content-around justify-content-md-between justify-content-lg-start lh-1 border-bottom"
+                      class="item_sellPrice pb-2 pt-3 ps-3 ps-md-0 ps-lg-3 text-red_1 fw-bold d-flex align-items-end justify-content-around justify-content-md-between justify-content-lg-start lh-1 border-bottom"
                     >
                       <p
                         class="me-5 ms-5 ms-lg-0 ps-md-4"
@@ -1827,7 +1856,7 @@
                     </div>
 
                     <div
-                      class="item_sellPrice pb-2 pt-3 ps-3 ps-md-0 ps-lg-3 text-danger fw-bold d-flex align-items-end justify-content-around justify-content-md-between justify-content-lg-start lh-1 border-bottom"
+                      class="item_sellPrice pb-2 pt-3 ps-3 ps-md-0 ps-lg-3 text-red_1 fw-bold d-flex align-items-end justify-content-around justify-content-md-between justify-content-lg-start lh-1 border-bottom"
                     >
                       <p
                         class="me-5 ms-5 ms-lg-0 ps-md-4"
@@ -1934,7 +1963,7 @@
                     </div>
 
                     <div
-                      class="item_sellPrice pb-2 pt-3 ps-3 ps-md-0 ps-lg-3 text-danger fw-bold d-flex align-items-end justify-content-around justify-content-md-between justify-content-lg-start lh-1 border-bottom"
+                      class="item_sellPrice pb-2 pt-3 ps-3 ps-md-0 ps-lg-3 text-red_1 fw-bold d-flex align-items-end justify-content-around justify-content-md-between justify-content-lg-start lh-1 border-bottom"
                     >
                       <p
                         class="me-5 ms-5 ms-lg-0 ps-md-4"
@@ -1996,32 +2025,57 @@
                   </div>
                 </div>
 
-                <nav
-                  aria-label="..."
-                  class="mt-4 d-flex align-items-center justify-content-center"
-                >
-                  <ul class="pagination">
-                    <li class="page-item disabled">
-                      <a class="page-link fs-3">Previous</a>
+                <!-- Pagination -->
+                <nav aria-label="Page navigation example " class="mt-3">
+                  <ul
+                    class="pagination"
+                    style="display: flex; justify-content: center"
+                  >
+                    <li class="page-item" style="width: 4.3rem; height: 4rem">
+                      <a
+                        class="h-100 w-100 fs-2 d-flex justify-content-center align-items-center page-link"
+                        href="#"
+                        aria-label="Previous"
+                      >
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
                     </li>
-                    <li class="page-item">
-                      <a class="page-link fs-3" href="#">1</a>
+                    <li class="page-item" style="width: 4.3rem; height: 4rem">
+                      <a
+                        class="h-100 w-100 fs-2 d-flex justify-content-center align-items-center page-link"
+                        href="#"
+                        >1</a
+                      >
                     </li>
-                    <li class="page-item active" aria-current="page">
-                      <a class="page-link fs-3" href="#">2</a>
+                    <li class="page-item" style="width: 4.3rem; height: 4rem">
+                      <a
+                        class="h-100 w-100 fs-2 d-flex justify-content-center align-items-center page-link"
+                        href="#"
+                        >2</a
+                      >
                     </li>
-                    <li class="page-item">
-                      <a class="page-link fs-3" href="#">3</a>
+                    <li class="page-item" style="width: 4.3rem; height: 4rem">
+                      <a
+                        class="h-100 w-100 fs-2 d-flex justify-content-center align-items-center page-link"
+                        href="#"
+                        >3</a
+                      >
                     </li>
-                    <li class="page-item">
-                      <a class="page-link fs-3" href="#">Next</a>
+                    <li class="page-item" style="width: 4.3rem; height: 4rem">
+                      <a
+                        class="h-100 w-100 fs-2 d-flex justify-content-center align-items-center page-link"
+                        href="#"
+                        aria-label="Next"
+                      >
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
                     </li>
                   </ul>
                 </nav>
 
                 <section id="slideBar1" class="bg-white p-5 rounded-3">
                   <div
-                    class="bg-white text-start pe-3 lh-lg overflow-auto"
+                    class="bg-white text-start pe-3 lh-lg overflow-auto scroll-custom"
                     style="height: 130rem"
                   >
                     <div class="introduce-0">
@@ -2253,7 +2307,7 @@
                     </h5>
                     <div class="card-text pt-2">
                       <div
-                        class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                        class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                       >
                         <p class="me-3" style="font-size: 3.8rem">-8%</p>
                         <div class="text-start">
@@ -2328,7 +2382,7 @@
                     </h5>
                     <div class="card-text pt-2">
                       <div
-                        class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                        class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                       >
                         <p class="me-3" style="font-size: 3.8rem">-30%</p>
                         <div class="text-start">
@@ -2403,7 +2457,7 @@
                     </h5>
                     <div class="card-text pt-2">
                       <div
-                        class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                        class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                       >
                         <p class="me-3" style="font-size: 3.8rem">-19%</p>
                         <div class="text-start">
@@ -2478,7 +2532,7 @@
                     </h5>
                     <div class="card-text pt-2">
                       <div
-                        class="item_sellPrice ps-3 text-danger fw-bold d-flex align-items-end lh-1 justify-content-around"
+                        class="item_sellPrice ps-3 text-red_1 fw-bold d-flex align-items-end lh-1 justify-content-around"
                       >
                         <p class="me-3" style="font-size: 3.8rem">-12%</p>
                         <div class="text-start">
@@ -2563,7 +2617,7 @@
 
                   <div class="p-4 pt-3">
                     <div
-                      class="lh-lg overflow-auto m-3"
+                      class="lh-lg overflow-auto m-3 scroll-custom"
                       style="height: 48.75rem"
                     >
                       <p>
@@ -2841,7 +2895,7 @@
                           style="height: 3.5rem; width: 3.5rem"
                         />
                         <a
-                          href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                          href="./product.html"
                           class="text-decoration-none text-white"
                         >
                           Nước Đông Trùng Hạ Thảo
@@ -2854,7 +2908,7 @@
                           style="height: 3.5rem; width: 3.5rem"
                         />
                         <a
-                          href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                          href="./product.html"
                           class="text-decoration-none text-white"
                         >
                           Hồng Sâm Linh Chi Hàn Quốc
@@ -2867,7 +2921,7 @@
                           style="height: 3.5rem; width: 3.5rem"
                         />
                         <a
-                          href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                          href="./product.html"
                           class="text-decoration-none text-white"
                         >
                           Hắc sâm
@@ -2880,7 +2934,7 @@
                           style="height: 3.5rem; width: 3.5rem"
                         />
                         <a
-                          href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                          href="./product.html"
                           class="text-decoration-none text-white"
                         >
                           Cao linh chi hộp gỗ
@@ -2893,7 +2947,7 @@
                           style="height: 3.5rem; width: 3.5rem"
                         />
                         <a
-                          href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                          href="./product.html"
                           class="text-decoration-none text-white"
                         >
                           Kẹo sâm không đường
@@ -2906,7 +2960,7 @@
                           style="height: 3.5rem; width: 3.5rem"
                         />
                         <a
-                          href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                          href="./product.html"
                           class="text-decoration-none text-white"
                         >
                           Sâm mật ong Hàn Quốc
@@ -2919,7 +2973,7 @@
                           style="height: 3.5rem; width: 3.5rem"
                         />
                         <a
-                          href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                          href="./product.html"
                           class="text-decoration-none text-white"
                         >
                           Đông trùng hạ thảo dạng viên
@@ -2932,7 +2986,7 @@
                           style="height: 3.5rem; width: 3.5rem"
                         />
                         <a
-                          href="https://kgin.com.vn/nuoc-dong-trung-ha-thao/"
+                          href="./product.html"
                           class="text-decoration-none text-white"
                         >
                           Sâm tẩm mật ong nguyên củ
@@ -3050,7 +3104,7 @@
                         >
                       </div>
                     </div>
-                    <div class="col-md-5 p-0 ps-3 ps-md-0">
+                    <div class="col-md-5 p-0 ps-3">
                       <div
                         class="footer__mail d-flex align-items-center align-items-md-start align-items-lg-center"
                       >
