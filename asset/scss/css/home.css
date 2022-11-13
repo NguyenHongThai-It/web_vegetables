@@ -16,6 +16,7 @@
   padding: 1rem;
   list-style-type: none;
   transform: rotateY("-50%");
+  transform: translateX(50%);
 }
 
 .header-carousel li {

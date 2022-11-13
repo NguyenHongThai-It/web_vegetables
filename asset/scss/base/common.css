@@ -179,3 +179,7 @@ td {
                               displayed */
   -webkit-box-orient: vertical;
 }
+.input-number-increment > i,
+.input-number-decrement > i {
+  color: var(--black_1);
+}

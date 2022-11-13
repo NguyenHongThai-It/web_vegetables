@@ -1,8 +1,20 @@
 /* // `sm` applies to x-small devices (portrait phones, less than 57.6rem) */
-
+@media (max-width: 763.98px) {
+  .carousel-for__item img {
+    max-height: 20rem;
+  }
+  .carousel-nav__item {
+    max-height: 6.5rem;
+    overflow: hidden;
+  }
+}
 @media (min-width: 57.6rem) {
 }
-@media (max-width: 99.198rem) {
+@media (max-width: 991.98px) {
+  .carousel-nav__item {
+    max-height: 9rem;
+    overflow: hidden;
+  }
 }
 /* // `md` applies to small devices (landscape phones, less than 76.8rem) */
 

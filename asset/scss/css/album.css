@@ -105,3 +105,7 @@
     0% 1rem
   );
 }
+.slick-next,
+.slick-prev {
+  display: none !important;
+}
